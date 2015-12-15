@@ -13,6 +13,10 @@
 		CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE963A981C1FF6D1009E5A33 /* Main.storyboard */; };
 		CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE963A9B1C1FF6D1009E5A33 /* Assets.xcassets */; };
 		CE963A9F1C1FF6D1009E5A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE963A9D1C1FF6D1009E5A33 /* LaunchScreen.storyboard */; };
+		CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AA61C1FF6EE009E5A33 /* GCGiftView.xib */; };
+		CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AA91C1FF716009E5A33 /* GCGiftView.m */; };
+		CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */; };
+		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		CE963A9B1C1FF6D1009E5A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE963A9E1C1FF6D1009E5A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE963AA01C1FF6D1009E5A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE963AA61C1FF6EE009E5A33 /* GCGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCGiftView.xib; sourceTree = "<group>"; };
+		CE963AA81C1FF716009E5A33 /* GCGiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGiftView.h; sourceTree = "<group>"; };
+		CE963AA91C1FF716009E5A33 /* GCGiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGiftView.m; sourceTree = "<group>"; };
+		CE963AAB1C1FFEBE009E5A33 /* GCGiftCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGiftCollectCell.h; sourceTree = "<group>"; };
+		CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGiftCollectCell.m; sourceTree = "<group>"; };
+		CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCGiftCollectCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,12 @@
 				CE963A9D1C1FF6D1009E5A33 /* LaunchScreen.storyboard */,
 				CE963AA01C1FF6D1009E5A33 /* Info.plist */,
 				CE963A8F1C1FF6D1009E5A33 /* Supporting Files */,
+				CE963AA81C1FF716009E5A33 /* GCGiftView.h */,
+				CE963AA91C1FF716009E5A33 /* GCGiftView.m */,
+				CE963AA61C1FF6EE009E5A33 /* GCGiftView.xib */,
+				CE963AAB1C1FFEBE009E5A33 /* GCGiftCollectCell.h */,
+				CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */,
+				CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -138,6 +154,8 @@
 			files = (
 				CE963A9F1C1FF6D1009E5A33 /* LaunchScreen.storyboard in Resources */,
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
+				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
+				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +169,8 @@
 			files = (
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
+				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +283,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				INFOPLIST_FILE = CollectiveView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sss.CollectiveView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
 			};
 			name = Debug;
 		};
@@ -276,8 +298,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sss.CollectiveView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
 			};
 			name = Release;
 		};
