@@ -49,9 +49,29 @@
 	
 	GCGiftView *view = (GCGiftView*)[self viewByClassName:@"GCGiftView" inNib:@"GCGiftView"];
 	
-	view.frame = CGRectMake(0, SCREEN_HEIGHT- 270, SCREEN_WIDTH, 270);
-	
+	//如果你使用代码添加了view并且出现了NSAutoresizingMaskLayoutConstraint相关的问题，你应该将该View的translatesAutoresizingMaskIntoConstraints设置为NO
+	view.translatesAutoresizingMaskIntoConstraints = NO;
+
 	[self.view addSubview:view];
+	
+	NSLayoutConstraint * constrint = [view.topAnchor constraintEqualToAnchor:self.view.bottomAnchor];
+	
+	constrint.active = YES;
+	
+	[view.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
+	
+	[view.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
+	
+	[view.heightAnchor constraintEqualToAnchor:self.view.heightAnchor multiplier:0.4].active = YES;
+	
+	[self.view layoutIfNeeded];
+	
+	[UIView animateWithDuration:5 animations:^{
+		
+		constrint.constant = -1 * view.bounds.size.height;
+		
+		[self.view layoutIfNeeded];
+	}];
 }
 
 @end

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,26 +13,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ue-Z5-nKi">
-                    <rect key="frame" x="0.0" y="223" width="200" height="44"/>
+                    <rect key="frame" x="0.0" y="187" width="200" height="80"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="购买金豆"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-g3-nMG">
-                    <rect key="frame" x="200" y="223" width="199" height="44"/>
+                    <rect key="frame" x="200" y="187" width="199" height="80"/>
                     <color key="backgroundColor" red="1" green="0.66267344319999999" blue="0.1049512425" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="6dF-gW-IT2"/>
+                        <constraint firstAttribute="height" constant="80" id="6dF-gW-IT2"/>
                     </constraints>
                     <state key="normal" title="送出"/>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="vrd-la-r4p">
-                    <rect key="frame" x="188" y="195" width="23" height="37"/>
+                    <rect key="frame" x="188" y="159" width="23" height="37"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </pageControl>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lE9-Np-6YV">
-                    <rect key="frame" x="0.0" y="0.0" width="399" height="216"/>
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="108"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="216" id="iHg-2h-kQI"/>
+                        <constraint firstAttribute="height" constant="108" id="iHg-2h-kQI"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s3p-jq-S2R">
                         <size key="itemSize" width="65" height="75"/>
@@ -48,21 +49,25 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="uwh-g3-nMG" firstAttribute="leading" secondItem="4ue-Z5-nKi" secondAttribute="trailing" id="CDo-6l-TcB"/>
+                <constraint firstItem="4ue-Z5-nKi" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="FfV-3t-Uh9"/>
                 <constraint firstItem="4ue-Z5-nKi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kir-8e-Sra"/>
                 <constraint firstAttribute="trailing" secondItem="lE9-Np-6YV" secondAttribute="trailing" id="MLY-TY-EPI"/>
                 <constraint firstAttribute="bottom" secondItem="uwh-g3-nMG" secondAttribute="bottom" id="MPa-6v-kvW"/>
                 <constraint firstAttribute="bottom" secondItem="4ue-Z5-nKi" secondAttribute="bottom" id="gh6-Go-cYQ"/>
+                <constraint firstItem="uwh-g3-nMG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="kTJ-5B-s5A"/>
                 <constraint firstItem="lE9-Np-6YV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kyt-5A-orl"/>
                 <constraint firstItem="vrd-la-r4p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l5Z-Qv-VZu"/>
                 <constraint firstAttribute="trailing" secondItem="uwh-g3-nMG" secondAttribute="trailing" id="le7-aW-pdv"/>
                 <constraint firstItem="uwh-g3-nMG" firstAttribute="top" secondItem="vrd-la-r4p" secondAttribute="bottom" constant="-9" id="rnT-cw-Wyo"/>
                 <constraint firstItem="lE9-Np-6YV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sgy-i8-1hu"/>
                 <constraint firstItem="4ue-Z5-nKi" firstAttribute="height" secondItem="uwh-g3-nMG" secondAttribute="height" id="tpt-xL-nxv"/>
-                <constraint firstItem="4ue-Z5-nKi" firstAttribute="width" secondItem="uwh-g3-nMG" secondAttribute="width" id="vDN-pV-Zl5"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="ibBtnRecharge" destination="4ue-Z5-nKi" id="j43-cy-cZf"/>
+                <outlet property="ibBtnSend" destination="uwh-g3-nMG" id="xju-30-LhH"/>
+                <outlet property="ibBtnWidth" destination="kTJ-5B-s5A" id="raO-Ey-aBj"/>
                 <outlet property="ibCollectionGift" destination="lE9-Np-6YV" id="Pc9-9t-cFj"/>
                 <outlet property="ibPage" destination="vrd-la-r4p" id="IOn-xX-fMf"/>
             </connections>

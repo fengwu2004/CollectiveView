@@ -34,33 +34,48 @@
 	
 	_ibPage.currentPageIndicatorTintColor = [UIColor grayColor];
 	
-//	[self setCollectionLayout];
+	[self setCollectionLayout];
+	
+	[_ibBtnRecharge setAttributedTitle:[self reChargeTitle] forState:UIControlStateNormal];
 }
 
-//- (void)setCollectionLayout {
-//	
-//	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-//	
-//	CGFloat width = (SCREEN_WIDTH - 3 * 10 - 2 * 15)/4;
-//	
-//	CGFloat height = width + 10;
-//	
-//	layout.itemSize = CGSizeMake(width, height);
-//	
-//	layout.minimumLineSpacing = 10;
-//	
-//	layout.minimumInteritemSpacing = 15;
-//	
-//	layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-//	
-//	CGFloat top = (kScrollableHeight - height - height - 15)/2;
-//	
-//	layout.sectionInset = UIEdgeInsetsMake(top, 15, top, 15);
-//	
-//	[_ibCollectionGift setCollectionViewLayout:layout];
-//	
-//	_ibCollectionGift.contentSize = CGSizeMake(800, 300);
-//}
+- (void)setCollectionLayout {
+	
+	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+	
+	CGFloat width = (SCREEN_WIDTH - 3 * 10 - 2 * 15)/4;
+	
+	CGFloat height = width + 10;
+	
+	layout.itemSize = CGSizeMake(width, height);
+	
+	layout.minimumLineSpacing = 10;
+	
+	layout.minimumInteritemSpacing = 15;
+	
+	layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+	
+	CGFloat top = (kScrollableHeight - height - height - 15)/2;
+	
+	layout.sectionInset = UIEdgeInsetsMake(top, 15, top, 15);
+	
+	[_ibCollectionGift setCollectionViewLayout:layout];
+	
+	_ibCollectionGift.contentSize = CGSizeMake(800, 300);
+}
+
+- (NSAttributedString*)reChargeTitle {
+	
+	NSString *str = [NSString stringWithFormat:@"剩余金豆:%d \n购买金豆", (int)45854];
+	
+	NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:str];
+	
+	[title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:8] range:NSMakeRange(0, str.length - 4)];
+	
+	[title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(str.length - 4, 4)];
+	
+	return title;
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 	
@@ -78,7 +93,7 @@
 	
 	GCGiftCollectCell *cell = (GCGiftCollectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
 	
-	NSLog(@"选中%d", indexPath.row + 8 * indexPath.section);
+	NSLog(@"选中%ld", indexPath.row + 8 * indexPath.section);
 	
 	[cell setHighlighted:YES];
 }
