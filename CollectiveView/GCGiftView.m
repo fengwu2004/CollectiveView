@@ -36,7 +36,17 @@
 	
 	[self setCollectionLayout];
 	
-	[_ibBtnRecharge setAttributedTitle:[self reChargeTitle] forState:UIControlStateNormal];
+	[_ibBtnRecharge setAttributedText:[self reChargeTitle]];
+	
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(recharge:)];
+	
+	[_ibBtnRecharge addGestureRecognizer:tap];
+}
+
+
+- (void)recharge:(id)sender {
+	
+	NSLog(@"88888888888888888888");
 }
 
 - (void)setCollectionLayout {
@@ -93,9 +103,23 @@
 	
 	GCGiftCollectCell *cell = (GCGiftCollectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
 	
-	NSLog(@"选中%ld", indexPath.row + 8 * indexPath.section);
+	NSLog(@"选中%d", (int)(indexPath.row + 8 * indexPath.section));
 	
 	[cell setHighlighted:YES];
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+	
+	NSLog(@"shouldSelectItemAtIndexPath");
+	
+	return YES;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+	
+	NSLog(@"shouldHighlightItemAtIndexPath");
+	
+	return YES;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

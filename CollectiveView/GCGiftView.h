@@ -14,7 +14,7 @@
 @property (nonatomic, retain) IBOutlet UIPageControl *ibPage;
 @property (nonatomic, retain) IBOutlet NSLayoutConstraint *ibBtnWidth;
 @property (nonatomic, retain) IBOutlet UIButton *ibBtnSend;
-@property (nonatomic, retain) IBOutlet UIButton *ibBtnRecharge;
+@property (nonatomic, retain) IBOutlet UILabel *ibBtnRecharge;
 
 
 @end

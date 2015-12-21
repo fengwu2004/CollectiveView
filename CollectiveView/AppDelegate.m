@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BlockAlertView.h"
 
 @interface AppDelegate ()
 
@@ -14,6 +15,14 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	
+	BlockAlertView *view = [[BlockAlertView alloc] initWithTitle:@"这是第一个界面" message:@"这是第一个，看看闪退不"];
+	
+	[view show];
+	
+	return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.

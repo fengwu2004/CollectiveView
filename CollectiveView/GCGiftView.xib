@@ -8,15 +8,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GCGiftView">
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GCGiftView">
             <rect key="frame" x="0.0" y="0.0" width="399" height="267"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ue-Z5-nKi">
-                    <rect key="frame" x="0.0" y="187" width="200" height="80"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="购买金豆"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-g3-nMG">
                     <rect key="frame" x="200" y="187" width="199" height="80"/>
                     <color key="backgroundColor" red="1" green="0.66267344319999999" blue="0.1049512425" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,27 +40,32 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="JwC-do-wYX"/>
                     </connections>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj9-lz-9ic">
+                    <rect key="frame" x="0.0" y="187" width="200" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="uwh-g3-nMG" firstAttribute="leading" secondItem="4ue-Z5-nKi" secondAttribute="trailing" id="CDo-6l-TcB"/>
-                <constraint firstItem="4ue-Z5-nKi" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="FfV-3t-Uh9"/>
-                <constraint firstItem="4ue-Z5-nKi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kir-8e-Sra"/>
+                <constraint firstAttribute="bottom" secondItem="jj9-lz-9ic" secondAttribute="bottom" id="570-tI-Qzd"/>
                 <constraint firstAttribute="trailing" secondItem="lE9-Np-6YV" secondAttribute="trailing" id="MLY-TY-EPI"/>
                 <constraint firstAttribute="bottom" secondItem="uwh-g3-nMG" secondAttribute="bottom" id="MPa-6v-kvW"/>
-                <constraint firstAttribute="bottom" secondItem="4ue-Z5-nKi" secondAttribute="bottom" id="gh6-Go-cYQ"/>
+                <constraint firstItem="jj9-lz-9ic" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bv3-oI-BhI"/>
                 <constraint firstItem="uwh-g3-nMG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="kTJ-5B-s5A"/>
+                <constraint firstItem="jj9-lz-9ic" firstAttribute="height" secondItem="uwh-g3-nMG" secondAttribute="height" id="kh9-xa-fIR"/>
                 <constraint firstItem="lE9-Np-6YV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kyt-5A-orl"/>
                 <constraint firstItem="vrd-la-r4p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l5Z-Qv-VZu"/>
                 <constraint firstAttribute="trailing" secondItem="uwh-g3-nMG" secondAttribute="trailing" id="le7-aW-pdv"/>
                 <constraint firstItem="uwh-g3-nMG" firstAttribute="top" secondItem="vrd-la-r4p" secondAttribute="bottom" constant="-9" id="rnT-cw-Wyo"/>
                 <constraint firstItem="lE9-Np-6YV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sgy-i8-1hu"/>
-                <constraint firstItem="4ue-Z5-nKi" firstAttribute="height" secondItem="uwh-g3-nMG" secondAttribute="height" id="tpt-xL-nxv"/>
+                <constraint firstItem="jj9-lz-9ic" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="zDF-xw-Lay"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="ibBtnRecharge" destination="4ue-Z5-nKi" id="j43-cy-cZf"/>
+                <outlet property="ibBtnRecharge" destination="jj9-lz-9ic" id="wP0-EU-xvY"/>
                 <outlet property="ibBtnSend" destination="uwh-g3-nMG" id="xju-30-LhH"/>
                 <outlet property="ibBtnWidth" destination="kTJ-5B-s5A" id="raO-Ey-aBj"/>
                 <outlet property="ibCollectionGift" destination="lE9-Np-6YV" id="Pc9-9t-cFj"/>

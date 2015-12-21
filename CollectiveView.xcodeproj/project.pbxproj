@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE941C591C23D71900A24768 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C581C23D71900A24768 /* BlockBackground.m */; };
+		CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C5B1C23D92C00A24768 /* BlockAlertView.m */; };
 		CE963A911C1FF6D1009E5A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A901C1FF6D1009E5A33 /* main.m */; };
 		CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A931C1FF6D1009E5A33 /* AppDelegate.m */; };
 		CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A961C1FF6D1009E5A33 /* ViewController.m */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE941C571C23D71900A24768 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
+		CE941C581C23D71900A24768 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
+		CE941C5A1C23D92C00A24768 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
+		CE941C5B1C23D92C00A24768 /* BlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlertView.m; sourceTree = "<group>"; };
+		CE941C5D1C23D9D000A24768 /* BlockUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockUI.h; sourceTree = "<group>"; };
+		CE941C5E1C23DA3900A24768 /* BlockUI_nova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockUI_nova.h; sourceTree = "<group>"; };
+		CE941C5F1C23DC3B00A24768 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		CE963A8C1C1FF6D1009E5A33 /* CollectiveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectiveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE963A901C1FF6D1009E5A33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE963A921C1FF6D1009E5A33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +77,12 @@
 		CE963A8E1C1FF6D1009E5A33 /* CollectiveView */ = {
 			isa = PBXGroup;
 			children = (
+				CE941C571C23D71900A24768 /* BlockBackground.h */,
+				CE941C581C23D71900A24768 /* BlockBackground.m */,
+				CE941C5A1C23D92C00A24768 /* BlockAlertView.h */,
+				CE941C5B1C23D92C00A24768 /* BlockAlertView.m */,
+				CE941C5E1C23DA3900A24768 /* BlockUI_nova.h */,
+				CE941C5D1C23D9D000A24768 /* BlockUI.h */,
 				CE963A921C1FF6D1009E5A33 /* AppDelegate.h */,
 				CE963A931C1FF6D1009E5A33 /* AppDelegate.m */,
 				CE963A951C1FF6D1009E5A33 /* ViewController.h */,
@@ -83,6 +98,7 @@
 				CE963AAB1C1FFEBE009E5A33 /* GCGiftCollectCell.h */,
 				CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */,
 				CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */,
+				CE941C5F1C23DC3B00A24768 /* Macros.h */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -170,6 +186,8 @@
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
+				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
@@ -285,6 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				INFOPLIST_FILE = CollectiveView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +343,7 @@
 				CE963AA51C1FF6D1009E5A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
