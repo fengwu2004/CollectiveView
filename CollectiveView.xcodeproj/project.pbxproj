@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F21C1C2964FE00E6874C /* AnimViewController.m */; };
+		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
+		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
+		CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F2221C29651800E6874C /* GCMessageDetailView.xib */; };
 		CE941C591C23D71900A24768 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C581C23D71900A24768 /* BlockBackground.m */; };
 		CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C5B1C23D92C00A24768 /* BlockAlertView.m */; };
 		CE963A911C1FF6D1009E5A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A901C1FF6D1009E5A33 /* main.m */; };
@@ -19,9 +23,17 @@
 		CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AA91C1FF716009E5A33 /* GCGiftView.m */; };
 		CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */; };
 		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
+		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
+		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE46F21B1C2964FE00E6874C /* AnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimViewController.h; sourceTree = "<group>"; };
+		CE46F21C1C2964FE00E6874C /* AnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimViewController.m; sourceTree = "<group>"; };
+		CE46F21D1C2964FE00E6874C /* AnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimViewController.xib; sourceTree = "<group>"; };
+		CE46F2201C29651800E6874C /* GCMessageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageDetailView.h; sourceTree = "<group>"; };
+		CE46F2211C29651800E6874C /* GCMessageDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageDetailView.m; sourceTree = "<group>"; };
+		CE46F2221C29651800E6874C /* GCMessageDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCMessageDetailView.xib; sourceTree = "<group>"; };
 		CE941C571C23D71900A24768 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
 		CE941C581C23D71900A24768 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
 		CE941C5A1C23D92C00A24768 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -45,6 +57,9 @@
 		CE963AAB1C1FFEBE009E5A33 /* GCGiftCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGiftCollectCell.h; sourceTree = "<group>"; };
 		CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGiftCollectCell.m; sourceTree = "<group>"; };
 		CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCGiftCollectCell.xib; sourceTree = "<group>"; };
+		CEA08ADF1C27DE8100342B1D /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
+		CEA08AE01C27DE8100342B1D /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,9 @@
 		CE963A8E1C1FF6D1009E5A33 /* CollectiveView */ = {
 			isa = PBXGroup;
 			children = (
+				CE46F2201C29651800E6874C /* GCMessageDetailView.h */,
+				CE46F2211C29651800E6874C /* GCMessageDetailView.m */,
+				CE46F2221C29651800E6874C /* GCMessageDetailView.xib */,
 				CE941C571C23D71900A24768 /* BlockBackground.h */,
 				CE941C581C23D71900A24768 /* BlockBackground.m */,
 				CE941C5A1C23D92C00A24768 /* BlockAlertView.h */,
@@ -99,6 +117,12 @@
 				CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */,
 				CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */,
 				CE941C5F1C23DC3B00A24768 /* Macros.h */,
+				CEA08ADF1C27DE8100342B1D /* TableController.h */,
+				CEA08AE01C27DE8100342B1D /* TableController.m */,
+				CEA08AE11C27DE8100342B1D /* TableController.xib */,
+				CE46F21B1C2964FE00E6874C /* AnimViewController.h */,
+				CE46F21C1C2964FE00E6874C /* AnimViewController.m */,
+				CE46F21D1C2964FE00E6874C /* AnimViewController.xib */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -172,6 +196,9 @@
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
+				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
+				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
+				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,9 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA08AE21C27DE8100342B1D /* TableController.m in Sources */,
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
+				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,

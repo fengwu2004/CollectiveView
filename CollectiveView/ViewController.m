@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "GCGiftView.h"
+#import "TableController.h"
+#import "AnimViewController.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -72,6 +74,20 @@
 		
 		[self.view layoutIfNeeded];
 	}];
+}
+
+- (IBAction)onTableView:(id)sender {
+	
+	TableController *vctl = [[TableController alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:NO];
+}
+
+- (IBAction)onAnimView:(id)sender {
+	
+	AnimViewController *vctl = [[AnimViewController alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:NO];
 }
 
 @end
