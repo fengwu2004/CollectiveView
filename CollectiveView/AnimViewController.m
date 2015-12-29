@@ -65,6 +65,10 @@
 
 		_messagePopUp.center = CGPointMake(230 * 0.5, 122);
 	}];
+	
+	bool value = 2048 & 2048;
+	
+	NSLog(@"%d", value);
 }
 
 @end

@@ -25,7 +25,18 @@
 		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
+		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDA0AE21C2A9E0C00A25E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE963A841C1FF6D1009E5A33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE963A8B1C1FF6D1009E5A33;
+			remoteInfo = CollectiveView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CE46F21B1C2964FE00E6874C /* AnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimViewController.h; sourceTree = "<group>"; };
@@ -60,10 +71,20 @@
 		CEA08ADF1C27DE8100342B1D /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		CEA08AE01C27DE8100342B1D /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
+		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
+		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE963A891C1FF6D1009E5A33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA0ADA1C2A9E0B00A25E20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CE963A8E1C1FF6D1009E5A33 /* CollectiveView */,
+				CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */,
 				CE963A8D1C1FF6D1009E5A33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				CE963A8C1C1FF6D1009E5A33 /* CollectiveView.app */,
+				CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +158,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */,
+				CEDA0AE11C2A9E0C00A25E20 /* Info.plist */,
+			);
+			path = CollectiveViewUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +187,24 @@
 			productReference = CE963A8C1C1FF6D1009E5A33 /* CollectiveView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEDA0ADC1C2A9E0B00A25E20 /* CollectiveViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDA0AE61C2A9E0C00A25E20 /* Build configuration list for PBXNativeTarget "CollectiveViewUITests" */;
+			buildPhases = (
+				CEDA0AD91C2A9E0B00A25E20 /* Sources */,
+				CEDA0ADA1C2A9E0B00A25E20 /* Frameworks */,
+				CEDA0ADB1C2A9E0B00A25E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDA0AE31C2A9E0C00A25E20 /* PBXTargetDependency */,
+			);
+			name = CollectiveViewUITests;
+			productName = CollectiveViewUITests;
+			productReference = CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +216,10 @@
 				TargetAttributes = {
 					CE963A8B1C1FF6D1009E5A33 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					CEDA0ADC1C2A9E0B00A25E20 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CE963A8B1C1FF6D1009E5A33;
 					};
 				};
 			};
@@ -183,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				CE963A8B1C1FF6D1009E5A33 /* CollectiveView */,
+				CEDA0ADC1C2A9E0B00A25E20 /* CollectiveViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +255,13 @@
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDA0ADB1C2A9E0B00A25E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEDA0AD91C2A9E0B00A25E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDA0AE31C2A9E0C00A25E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE963A8B1C1FF6D1009E5A33 /* CollectiveView */;
+			targetProxy = CEDA0AE21C2A9E0C00A25E20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE963A981C1FF6D1009E5A33 /* Main.storyboard */ = {
@@ -332,12 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Debug;
 		};
@@ -345,12 +425,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
+			};
+			name = Release;
+		};
+		CEDA0AE41C2A9E0C00A25E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				INFOPLIST_FILE = CollectiveViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				TEST_TARGET_NAME = CollectiveView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CEDA0AE51C2A9E0C00A25E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollectiveViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				TEST_TARGET_NAME = CollectiveView;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -371,6 +482,15 @@
 			buildConfigurations = (
 				CE963AA41C1FF6D1009E5A33 /* Debug */,
 				CE963AA51C1FF6D1009E5A33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDA0AE61C2A9E0C00A25E20 /* Build configuration list for PBXNativeTarget "CollectiveViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDA0AE41C2A9E0C00A25E20 /* Debug */,
+				CEDA0AE51C2A9E0C00A25E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
