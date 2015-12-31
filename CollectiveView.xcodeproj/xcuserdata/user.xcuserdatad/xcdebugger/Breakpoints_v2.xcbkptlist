@@ -25,14 +25,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CollectiveView/AnimViewController.m"
-            timestampString = "472721745.14148"
+            filePath = "CollectiveViewUITests/CollectiveViewUITests.m"
+            timestampString = "473062067.279303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-onDetailClick:"
-            landmarkType = "5">
+            startingLineNumber = "67"
+            endingLineNumber = "67">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

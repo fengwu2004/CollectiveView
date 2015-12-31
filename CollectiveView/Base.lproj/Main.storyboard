@@ -32,8 +32,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA1-n4-BYU">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="sendgift" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA1-n4-BYU">
                                 <rect key="frame" x="278" y="285" width="45" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
                                 <state key="normal" title="送礼物"/>
                                 <connections>
                                     <action selector="onAnimView:" destination="PeC-A0-1yf" eventType="touchUpInside" id="JAe-iN-qUX"/>

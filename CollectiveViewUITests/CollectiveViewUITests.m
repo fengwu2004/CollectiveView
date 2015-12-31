@@ -35,25 +35,29 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
 	
-	XCUIApplication *app = [[XCUIApplication alloc] init];
-	[app.buttons[@"送礼物"] tap];
-	
-	XCUIElement *button = app.buttons[@"Button"];
-	[button tap];
-	
-	XCUIElement *button2 = [[[[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"AnimView"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeButton].element;
-	[button2 tap];
-	[button tap];
-	[button2 tap];
-	[button tap];
-	[button2 tap];
-	[button tap];
-	[button2 tap];
-	[[[[app.navigationBars[@"AnimView"] childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Back"] elementBoundByIndex:0] tap];
-	[[[[[[[app childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:6] childrenMatchingType:XCUIElementTypeOther].element tap];
-	
-	
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+		XCUIApplication *app = [[XCUIApplication alloc] init];
+		
+		XCUIElement *sendGift = app.buttons[@"sendgift"];
+		
+		[sendGift tap];
+		 
+		XCUIElement *button = app.buttons[@"Button"];
+		
+		[button tap];
+		
+		XCUIElement *animView = app.otherElements[@"messagedetailview"];
+		
+		if (animView.exists) {
+			
+			XCUIElementQuery *buttons = [animView childrenMatchingType:XCUIElementTypeButton];
+			
+			XCUIElement *hidedetail = buttons[@"hidedetail"];
+			
+			if (hidedetail.exists) {
+				
+				[hidedetail tap];
+			}
+		}
 }
 
 @end
