@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="19c-Bk-8mc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
@@ -37,17 +38,28 @@
                                 <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
                                 <state key="normal" title="送礼物"/>
                                 <connections>
-                                    <action selector="onAnimView:" destination="PeC-A0-1yf" eventType="touchUpInside" id="JAe-iN-qUX"/>
+                                    <action selector="testRunLoop:" destination="PeC-A0-1yf" eventType="touchUpInside" id="Ls6-8d-tUj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是用来复制用的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-tq-eWz">
+                                <rect key="frame" x="232" y="370" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JK5-tq-eWz" firstAttribute="top" secondItem="fA1-n4-BYU" secondAttribute="bottom" constant="55" id="arc-T7-vDi"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerY" secondItem="ahe-jc-sGP" secondAttribute="centerY" id="eQ5-J4-34U"/>
+                            <constraint firstItem="JK5-tq-eWz" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="pBT-Vw-wDZ"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="w17-cg-x3G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DfX-e6-g0f"/>
+                    <connections>
+                        <outlet property="ibLabel" destination="JK5-tq-eWz" id="icz-dO-V5m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1Z-rg-hUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

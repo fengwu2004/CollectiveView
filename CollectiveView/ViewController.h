@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic, retain) IBOutlet UILabel *ibLabel;
+
 - (IBAction)onGiftBtnClick:(id)sender;
 
 @end

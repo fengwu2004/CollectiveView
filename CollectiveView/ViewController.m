@@ -10,19 +10,112 @@
 #import "GCGiftView.h"
 #import "TableController.h"
 #import "AnimViewController.h"
+#import "TestRunLoopVCTL.h"
+#import "UICopyLabel.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 @interface ViewController ()
 
+//@property (nonatomic, retain) UICopyLabel *ibLabel;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+	
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+//	[self addTap];
+	
+	UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onLabelTap:)];
+	
+//	tap.numberOfTapsRequired = 2;
+	
+	[_ibLabel setBackgroundColor:[UIColor redColor]];
+	
+	[_ibLabel addGestureRecognizer:tap];
+}
+
+- (void)onLabelTap:(UITapGestureRecognizer*)sender {
+	
+	NSLog(@"点击label");
+	
+	[_ibLabel becomeFirstResponder];
+	
+	UIMenuItem *copyItem = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copy:)];
+	
+	[[UIMenuController sharedMenuController] setMenuItems:@[copyItem]];
+	
+	[[UIMenuController sharedMenuController] setTargetRect:_ibLabel.frame inView:self.view];
+	
+	[[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
+}
+
+- (void)copy:(id)sender {
+	
+	NSLog(@"点击label");
+	
+	NSLog(@"点击label");
+}
+
+- (void)addGradientLayer {
+	
+	id color1 = (id)[UIColor redColor].CGColor;
+	
+	id color2 = (id)[UIColor greenColor].CGColor;
+	
+	id color3 = (id)[UIColor blueColor].CGColor;
+	
+	NSArray *colors = @[color1, color2, color3];
+	
+	NSArray *locations = @[@0.0, @0.4, @1.0];
+	
+	CAGradientLayer *layer = [CAGradientLayer layer];
+	
+	layer.colors = colors;
+	
+	layer.locations = locations;
+	
+	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+	
+	layer.frame = view.bounds;
+	
+	[view.layer insertSublayer:layer atIndex:0];
+	
+	[self.view addSubview:view];
+}
+
+- (void)addTap {
+	
+	UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+	
+	btn.backgroundColor = [UIColor redColor];
+	
+	[btn addTarget:self action:@selector(onTap:) forControlEvents:UIControlEventTouchUpInside];
+	
+	[self.view addSubview:btn];
+	
+	[UIView animateWithDuration:100 animations:^{
+		
+		[btn setCenter:CGPointMake(0, 100)];
+	}];
+	
+	[self performSelector:@selector(display:) withObject:btn afterDelay:2];
+}
+
+- (void)display:(id)sender {
+	
+	UIButton *btn = (UIButton *)sender;
+	
+	NSLog(@"sdfsdfsadffsd:%@", NSStringFromCGRect(btn.frame));
+}
+
+- (void)onTap:(id)sender {
+	
+	[self addGradientLayer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,6 +179,13 @@
 - (IBAction)onAnimView:(id)sender {
 	
 	AnimViewController *vctl = [[AnimViewController alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:NO];
+}
+
+- (IBAction)testRunLoop:(id)sender {
+	
+	TestRunLoopVCTL *vctl = [[TestRunLoopVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:NO];
 }

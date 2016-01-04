@@ -11,6 +11,9 @@
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
 		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
 		CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F2221C29651800E6874C /* GCMessageDetailView.xib */; };
+		CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */; };
+		CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */; };
+		CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46091C34FE38001D79FA /* RunLoopTask.m */; };
 		CE941C591C23D71900A24768 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C581C23D71900A24768 /* BlockBackground.m */; };
 		CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C5B1C23D92C00A24768 /* BlockAlertView.m */; };
 		CE963A911C1FF6D1009E5A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A901C1FF6D1009E5A33 /* main.m */; };
@@ -25,6 +28,7 @@
 		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
+		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,11 @@
 		CE46F2201C29651800E6874C /* GCMessageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageDetailView.h; sourceTree = "<group>"; };
 		CE46F2211C29651800E6874C /* GCMessageDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageDetailView.m; sourceTree = "<group>"; };
 		CE46F2221C29651800E6874C /* GCMessageDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCMessageDetailView.xib; sourceTree = "<group>"; };
+		CE8E46031C34F7EF001D79FA /* TestRunLoopVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunLoopVCTL.h; sourceTree = "<group>"; };
+		CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunLoopVCTL.m; sourceTree = "<group>"; };
+		CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestRunLoopVCTL.xib; sourceTree = "<group>"; };
+		CE8E46081C34FE38001D79FA /* RunLoopTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTask.h; sourceTree = "<group>"; };
+		CE8E46091C34FE38001D79FA /* RunLoopTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTask.m; sourceTree = "<group>"; };
 		CE941C571C23D71900A24768 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
 		CE941C581C23D71900A24768 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
 		CE941C5A1C23D92C00A24768 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -71,6 +80,8 @@
 		CEA08ADF1C27DE8100342B1D /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		CEA08AE01C27DE8100342B1D /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
+		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
+		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +157,13 @@
 				CE46F21B1C2964FE00E6874C /* AnimViewController.h */,
 				CE46F21C1C2964FE00E6874C /* AnimViewController.m */,
 				CE46F21D1C2964FE00E6874C /* AnimViewController.xib */,
+				CE8E46031C34F7EF001D79FA /* TestRunLoopVCTL.h */,
+				CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */,
+				CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */,
+				CE8E46081C34FE38001D79FA /* RunLoopTask.h */,
+				CE8E46091C34FE38001D79FA /* RunLoopTask.m */,
+				CEB8C0601C3A89640010110E /* UICopyLabel.h */,
+				CEB8C0611C3A89640010110E /* UICopyLabel.m */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -252,6 +270,7 @@
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
+				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
@@ -275,12 +294,15 @@
 				CEA08AE21C27DE8100342B1D /* TableController.m in Sources */,
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
+				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
+				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +434,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +450,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
