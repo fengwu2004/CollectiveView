@@ -47,11 +47,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-73-DBH">
+                                <rect key="frame" x="184" y="183" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="xGB-EH-rI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k4q-73-DBH" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" constant="-8.5" id="6OZ-rG-qtU"/>
                             <constraint firstItem="JK5-tq-eWz" firstAttribute="top" secondItem="fA1-n4-BYU" secondAttribute="bottom" constant="55" id="arc-T7-vDi"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerY" secondItem="ahe-jc-sGP" secondAttribute="centerY" id="eQ5-J4-34U"/>
+                            <constraint firstItem="k4q-73-DBH" firstAttribute="top" secondItem="JK5-tq-eWz" secondAttribute="bottom" constant="-208" id="jCL-80-abc"/>
                             <constraint firstItem="JK5-tq-eWz" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="pBT-Vw-wDZ"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="w17-cg-x3G"/>
                         </constraints>

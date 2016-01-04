@@ -29,6 +29,7 @@
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
+		CEB8C0651C3A930F0010110E /* UILabel+CopyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
+		CEB8C0631C3A930F0010110E /* UILabel+CopyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CopyMenu.h"; sourceTree = "<group>"; };
+		CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CopyMenu.m"; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				CE8E46091C34FE38001D79FA /* RunLoopTask.m */,
 				CEB8C0601C3A89640010110E /* UICopyLabel.h */,
 				CEB8C0611C3A89640010110E /* UICopyLabel.m */,
+				CEB8C0631C3A930F0010110E /* UILabel+CopyMenu.h */,
+				CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
+				CEB8C0651C3A930F0010110E /* UILabel+CopyMenu.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
@@ -434,7 +440,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,7 +456,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

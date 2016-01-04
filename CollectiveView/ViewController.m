@@ -12,13 +12,14 @@
 #import "AnimViewController.h"
 #import "TestRunLoopVCTL.h"
 #import "UICopyLabel.h"
+#import "UILabel+CopyMenu.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 @interface ViewController ()
 
-//@property (nonatomic, retain) UICopyLabel *ibLabel;
+@property (nonatomic, retain) UICopyLabel *myCopyEnableLabel;
 
 @end
 
@@ -28,15 +29,17 @@
 	
 	[super viewDidLoad];
 	
-//	[self addTap];
+//	UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onLabelTap:)];
+//	
+//	[_ibLabel setBackgroundColor:[UIColor redColor]];
+//	
+//	[_ibLabel addGestureRecognizer:tap];
 	
-	UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onLabelTap:)];
+	_myCopyEnableLabel = [[UICopyLabel alloc] initWithFrame:CGRectMake(100, 100, 100, 32)];
 	
-//	tap.numberOfTapsRequired = 2;
+	_myCopyEnableLabel.text = @"abcdefghi";
 	
-	[_ibLabel setBackgroundColor:[UIColor redColor]];
-	
-	[_ibLabel addGestureRecognizer:tap];
+	[self.view addSubview:_myCopyEnableLabel];
 }
 
 - (void)onLabelTap:(UITapGestureRecognizer*)sender {
@@ -45,16 +48,21 @@
 	
 	[_ibLabel becomeFirstResponder];
 	
-	UIMenuItem *copyItem = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copy:)];
+	UIMenuItem *copyItem = [[UIMenuItem alloc] initWithTitle:@"" action:@selector(xxxx:)];
 	
 	[[UIMenuController sharedMenuController] setMenuItems:@[copyItem]];
 	
 	[[UIMenuController sharedMenuController] setTargetRect:_ibLabel.frame inView:self.view];
 	
-	[[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
+	[[UIMenuController sharedMenuController] setMenuVisible:YES animated:NO];
+	
+	if ([[UIMenuController sharedMenuController] isMenuVisible]) {
+		
+		NSLog(@"可见");
+	}
 }
 
-- (void)copy:(id)sender {
+- (void)xxxx:(id)sender {
 	
 	NSLog(@"点击label");
 	

@@ -1,14 +1,14 @@
 //
-//  UICopyLabel.m
+//  UILabel+CopyMenu.m
 //  CollectiveView
 //
 //  Created by user on 16/1/4.
 //  Copyright © 2016年 user. All rights reserved.
 //
 
-#import "UICopyLabel.h"
+#import "UILabel+CopyMenu.h"
 
-@implementation UICopyLabel
+@implementation UILabel(CopyMenu)
 
 -(BOOL)canBecomeFirstResponder {
 	
@@ -31,9 +31,7 @@
 	
 	self.userInteractionEnabled = YES;  //用户交互的总开关
 	
-	UITapGestureRecognizer *touch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-	
-	touch.numberOfTapsRequired = 1;
+	UILongPressGestureRecognizer *touch = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
 	
 	[self addGestureRecognizer:touch];
 }
