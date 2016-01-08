@@ -11,6 +11,7 @@
 #import "TableController.h"
 #import "AnimViewController.h"
 #import "TestRunLoopVCTL.h"
+#import "OCCallJavaScript.h"
 #import "UICopyLabel.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -202,6 +203,13 @@
 	TestRunLoopVCTL *vctl = [[TestRunLoopVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:NO];
+}
+
+- (IBAction)testJs:(id)sender {
+	
+	OCCallJavaScript* vctl = [[OCCallJavaScript alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
 }
 
 @end

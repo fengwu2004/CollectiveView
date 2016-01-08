@@ -29,6 +29,9 @@
 		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
+		CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */; };
+		CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */; };
+		CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
@@ -91,6 +94,10 @@
 		CEA08ADF1C27DE8100342B1D /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		CEA08AE01C27DE8100342B1D /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
+		CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJavaScript.h; sourceTree = "<group>"; };
+		CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJavaScript.m; sourceTree = "<group>"; };
+		CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallJavaScript.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +143,7 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */,
 				CE963A8E1C1FF6D1009E5A33 /* CollectiveView */,
 				CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */,
 				CE903E6B1C3B6D77008D8163 /* CollectiveViewTests */,
@@ -193,6 +202,9 @@
 				CE8E46091C34FE38001D79FA /* RunLoopTask.m */,
 				CEB8C0601C3A89640010110E /* UICopyLabel.h */,
 				CEB8C0611C3A89640010110E /* UICopyLabel.m */,
+				CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */,
+				CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */,
+				CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
+				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
@@ -364,6 +377,7 @@
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */,
 				CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
@@ -595,6 +609,7 @@
 				CE903E731C3B6D77008D8163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE963A871C1FF6D1009E5A33 /* Build configuration list for PBXProject "CollectiveView" */ = {
 			isa = XCConfigurationList;
