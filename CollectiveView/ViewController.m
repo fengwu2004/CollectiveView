@@ -45,7 +45,7 @@
 		_bilibiliBtn.backgroundColor = [UIColor greenColor];
 	}
 }
- 
+
 - (void)onLabelTap:(UITapGestureRecognizer*)sender {
 	
 	NSLog(@"点击label");
