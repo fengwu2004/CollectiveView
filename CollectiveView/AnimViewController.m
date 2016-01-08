@@ -13,7 +13,7 @@
 
 @interface AnimViewController ()
 
-@property (nonatomic, retain) GCMessageDetailView *messagePopUp;
+@property (nonatomic, retain) IBOutlet GCMessageDetailView *messagePopUp;
 @property (nonatomic, strong) NSLayoutConstraint *leading;
 @end
 
@@ -50,7 +50,9 @@
 	
 	if (!_messagePopUp) {
 		
-		_messagePopUp = (GCMessageDetailView*)[self viewByClassName:@"GCMessageDetailView" inNib:@"GCMessageDetailView"];
+		[[NSBundle mainBundle] loadNibNamed:@"GCMessageDetailView" owner:self options:nil];
+		
+//		_messagePopUp = (GCMessageDetailView*)[self viewByClassName:@"GCMessageDetailView" inNib:@"GCMessageDetailView"];
 		
 		[_messagePopUp setMessage:@"她给你发了一条私信"];
 		

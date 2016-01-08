@@ -14,6 +14,7 @@
 		CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */; };
 		CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */; };
 		CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46091C34FE38001D79FA /* RunLoopTask.m */; };
+		CE903E6D1C3B6D77008D8163 /* CollectiveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE903E6C1C3B6D77008D8163 /* CollectiveViewTests.m */; };
 		CE941C591C23D71900A24768 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C581C23D71900A24768 /* BlockBackground.m */; };
 		CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C5B1C23D92C00A24768 /* BlockAlertView.m */; };
 		CE963A911C1FF6D1009E5A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A901C1FF6D1009E5A33 /* main.m */; };
@@ -29,11 +30,17 @@
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
-		CEB8C0651C3A930F0010110E /* UILabel+CopyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE903E6F1C3B6D77008D8163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE963A841C1FF6D1009E5A33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE963A8B1C1FF6D1009E5A33;
+			remoteInfo = CollectiveView;
+		};
 		CEDA0AE21C2A9E0C00A25E20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE963A841C1FF6D1009E5A33 /* Project object */;
@@ -55,6 +62,9 @@
 		CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestRunLoopVCTL.xib; sourceTree = "<group>"; };
 		CE8E46081C34FE38001D79FA /* RunLoopTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTask.h; sourceTree = "<group>"; };
 		CE8E46091C34FE38001D79FA /* RunLoopTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTask.m; sourceTree = "<group>"; };
+		CE903E6A1C3B6D77008D8163 /* CollectiveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE903E6C1C3B6D77008D8163 /* CollectiveViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewTests.m; sourceTree = "<group>"; };
+		CE903E6E1C3B6D77008D8163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE941C571C23D71900A24768 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
 		CE941C581C23D71900A24768 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
 		CE941C5A1C23D92C00A24768 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -83,14 +93,19 @@
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
-		CEB8C0631C3A930F0010110E /* UILabel+CopyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CopyMenu.h"; sourceTree = "<group>"; };
-		CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CopyMenu.m"; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE903E671C3B6D77008D8163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE963A891C1FF6D1009E5A33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,11 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE903E6B1C3B6D77008D8163 /* CollectiveViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE903E6C1C3B6D77008D8163 /* CollectiveViewTests.m */,
+				CE903E6E1C3B6D77008D8163 /* Info.plist */,
+			);
+			path = CollectiveViewTests;
+			sourceTree = "<group>";
+		};
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
 				CE963A8E1C1FF6D1009E5A33 /* CollectiveView */,
 				CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */,
+				CE903E6B1C3B6D77008D8163 /* CollectiveViewTests */,
 				CE963A8D1C1FF6D1009E5A33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +147,7 @@
 			children = (
 				CE963A8C1C1FF6D1009E5A33 /* CollectiveView.app */,
 				CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */,
+				CE903E6A1C3B6D77008D8163 /* CollectiveViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,8 +193,6 @@
 				CE8E46091C34FE38001D79FA /* RunLoopTask.m */,
 				CEB8C0601C3A89640010110E /* UICopyLabel.h */,
 				CEB8C0611C3A89640010110E /* UICopyLabel.m */,
-				CEB8C0631C3A930F0010110E /* UILabel+CopyMenu.h */,
-				CEB8C0641C3A930F0010110E /* UILabel+CopyMenu.m */,
 			);
 			path = CollectiveView;
 			sourceTree = "<group>";
@@ -193,6 +217,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE903E691C3B6D77008D8163 /* CollectiveViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE903E711C3B6D77008D8163 /* Build configuration list for PBXNativeTarget "CollectiveViewTests" */;
+			buildPhases = (
+				CE903E661C3B6D77008D8163 /* Sources */,
+				CE903E671C3B6D77008D8163 /* Frameworks */,
+				CE903E681C3B6D77008D8163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE903E701C3B6D77008D8163 /* PBXTargetDependency */,
+			);
+			name = CollectiveViewTests;
+			productName = CollectiveViewTests;
+			productReference = CE903E6A1C3B6D77008D8163 /* CollectiveViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE963A8B1C1FF6D1009E5A33 /* CollectiveView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE963AA31C1FF6D1009E5A33 /* Build configuration list for PBXNativeTarget "CollectiveView" */;
@@ -237,6 +279,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = user;
 				TargetAttributes = {
+					CE903E691C3B6D77008D8163 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CE963A8B1C1FF6D1009E5A33;
+					};
 					CE963A8B1C1FF6D1009E5A33 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -261,11 +307,19 @@
 			targets = (
 				CE963A8B1C1FF6D1009E5A33 /* CollectiveView */,
 				CEDA0ADC1C2A9E0B00A25E20 /* CollectiveViewUITests */,
+				CE903E691C3B6D77008D8163 /* CollectiveViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE903E681C3B6D77008D8163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE963A8A1C1FF6D1009E5A33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +346,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE903E661C3B6D77008D8163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE903E6D1C3B6D77008D8163 /* CollectiveViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE963A881C1FF6D1009E5A33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,7 +368,6 @@
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
-				CEB8C0651C3A930F0010110E /* UILabel+CopyMenu.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
@@ -324,6 +385,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE903E701C3B6D77008D8163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE963A8B1C1FF6D1009E5A33 /* CollectiveView */;
+			targetProxy = CE903E6F1C3B6D77008D8163 /* PBXContainerItemProxy */;
+		};
 		CEDA0AE31C2A9E0C00A25E20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE963A8B1C1FF6D1009E5A33 /* CollectiveView */;
@@ -351,6 +417,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE903E721C3B6D77008D8163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CollectiveViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectiveView.app/CollectiveView";
+			};
+			name = Debug;
+		};
+		CE903E731C3B6D77008D8163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CollectiveViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectiveView.app/CollectiveView";
+			};
+			name = Release;
+		};
 		CE963AA11C1FF6D1009E5A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,7 +532,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +548,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +588,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE903E711C3B6D77008D8163 /* Build configuration list for PBXNativeTarget "CollectiveViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE903E721C3B6D77008D8163 /* Debug */,
+				CE903E731C3B6D77008D8163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CE963A871C1FF6D1009E5A33 /* Build configuration list for PBXProject "CollectiveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

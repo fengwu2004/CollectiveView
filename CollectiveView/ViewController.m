@@ -12,7 +12,6 @@
 #import "AnimViewController.h"
 #import "TestRunLoopVCTL.h"
 #import "UICopyLabel.h"
-#import "UILabel+CopyMenu.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -20,6 +19,7 @@
 @interface ViewController ()
 
 @property (nonatomic, retain) UICopyLabel *myCopyEnableLabel;
+@property (nonatomic, retain) UIButton *bilibiliBtn;
 
 @end
 
@@ -29,17 +29,21 @@
 	
 	[super viewDidLoad];
 	
-//	UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onLabelTap:)];
-//	
-//	[_ibLabel setBackgroundColor:[UIColor redColor]];
-//	
-//	[_ibLabel addGestureRecognizer:tap];
+	[self addTap];
 	
-	_myCopyEnableLabel = [[UICopyLabel alloc] initWithFrame:CGRectMake(100, 100, 100, 32)];
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapBilibili:)];
 	
-	_myCopyEnableLabel.text = @"abcdefghi";
+	[self.view addGestureRecognizer:tap];
+}
+
+- (void)onTapBilibili:(UITapGestureRecognizer*)sender {
 	
-	[self.view addSubview:_myCopyEnableLabel];
+	CGPoint point = [sender locationInView:self.view];
+	
+	if ([_bilibiliBtn.layer.presentationLayer hitTest:point]) {
+		
+		_bilibiliBtn.backgroundColor = [UIColor greenColor];
+	}
 }
 
 - (void)onLabelTap:(UITapGestureRecognizer*)sender {
@@ -98,20 +102,22 @@
 
 - (void)addTap {
 	
-	UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+	_bilibiliBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
 	
-	btn.backgroundColor = [UIColor redColor];
+	_bilibiliBtn.backgroundColor = [UIColor redColor];
 	
-	[btn addTarget:self action:@selector(onTap:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:_bilibiliBtn];
 	
-	[self.view addSubview:btn];
+	_bilibiliBtn.userInteractionEnabled = NO;
 	
-	[UIView animateWithDuration:100 animations:^{
+	[_bilibiliBtn addTarget:self action:@selector(display:) forControlEvents:UIControlEventTouchUpInside];
+	
+	[UIView animateWithDuration:20 animations:^{
 		
-		[btn setCenter:CGPointMake(0, 100)];
+		[_bilibiliBtn setCenter:CGPointMake(0, 100 + 100)];
 	}];
 	
-	[self performSelector:@selector(display:) withObject:btn afterDelay:2];
+	[self performSelector:@selector(display:) withObject:_bilibiliBtn afterDelay:2];
 }
 
 - (void)display:(id)sender {
