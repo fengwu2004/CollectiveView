@@ -13,6 +13,7 @@
 #import "TestRunLoopVCTL.h"
 #import "OCCallJavaScript.h"
 #import "UICopyLabel.h"
+#import "GCBackGroundMusicVCTL.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -30,11 +31,23 @@
 	
 	[super viewDidLoad];
 	
-	[self addTap];
+//	[self addTap];
 	
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapBilibili:)];
 	
 	[self.view addGestureRecognizer:tap];
+	
+	NSMutableString *str = [NSMutableString stringWithFormat:@"%@", @"acb"];
+	
+	NSString *str1 = [str copy];
+	
+	NSLog(@"%lx", (long)str1);
+	
+	NSString *str2 = str1;
+	
+	NSLog(@"%lx", (long)str2);
+	
+	[str appendString:@"ef"];
 }
 
 - (void)onTapBilibili:(UITapGestureRecognizer*)sender {
@@ -208,6 +221,13 @@
 - (IBAction)testJs:(id)sender {
 	
 	OCCallJavaScript* vctl = [[OCCallJavaScript alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onMusicPanle:(id)sender {
+	
+	GCBackGroundMusicVCTL *vctl = [[GCBackGroundMusicVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
 }

@@ -15,7 +15,7 @@
 	
 	[super viewDidLoad];
 	
-	NSString *urlString = @"https://www.baidu.com";
+	NSString *urlString = @"http://127.0.0.1/web/1.html";
 	
 	NSURL *url = [NSURL URLWithString:urlString];
 	

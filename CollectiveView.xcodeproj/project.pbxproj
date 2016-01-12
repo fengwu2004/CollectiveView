@@ -32,6 +32,15 @@
 		CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */; };
 		CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */; };
 		CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */; };
+		CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91C91C44E06500D2CBDB /* GCBackGroundMusicVCTL.m */; };
+		CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */; };
+		CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91CD1C44E1A600D2CBDB /* GCSectionHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91D11C44E1E400D2CBDB /* Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91D41C44E1F900D2CBDB /* NSDate+TomAddition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91D71C44E20C00D2CBDB /* NSString+TomAddition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91DA1C44E21300D2CBDB /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */; };
+		CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
@@ -54,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE17C1571C43935100CAF3C5 /* Persion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
+		CE17C1581C43935100CAF3C5 /* Persion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
 		CE46F21B1C2964FE00E6874C /* AnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimViewController.h; sourceTree = "<group>"; };
 		CE46F21C1C2964FE00E6874C /* AnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimViewController.m; sourceTree = "<group>"; };
 		CE46F21D1C2964FE00E6874C /* AnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +109,24 @@
 		CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJavaScript.h; sourceTree = "<group>"; };
 		CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJavaScript.m; sourceTree = "<group>"; };
 		CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallJavaScript.xib; sourceTree = "<group>"; };
+		CEAC91C81C44E06500D2CBDB /* GCBackGroundMusicVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBackGroundMusicVCTL.h; sourceTree = "<group>"; };
+		CEAC91C91C44E06500D2CBDB /* GCBackGroundMusicVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBackGroundMusicVCTL.m; sourceTree = "<group>"; };
+		CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCBackGroundMusicVCTL.xib; sourceTree = "<group>"; };
+		CEAC91CD1C44E1A600D2CBDB /* GCSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCSectionHeaderView.m; sourceTree = "<group>"; };
+		CEAC91CF1C44E1AA00D2CBDB /* GCSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSectionHeaderView.h; sourceTree = "<group>"; };
+		CEAC91D01C44E1E400D2CBDB /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		CEAC91D11C44E1E400D2CBDB /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		CEAC91D31C44E1F900D2CBDB /* NSDate+TomAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TomAddition.h"; sourceTree = "<group>"; };
+		CEAC91D41C44E1F900D2CBDB /* NSDate+TomAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TomAddition.m"; sourceTree = "<group>"; };
+		CEAC91D61C44E20C00D2CBDB /* NSString+TomAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TomAddition.h"; sourceTree = "<group>"; };
+		CEAC91D71C44E20C00D2CBDB /* NSString+TomAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TomAddition.m"; sourceTree = "<group>"; };
+		CEAC91D91C44E21300D2CBDB /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		CEAC91DA1C44E21300D2CBDB /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		CEAC91DC1C44E22A00D2CBDB /* CommonTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		CEAC91DD1C44E2D200D2CBDB /* GCDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDefines.h; sourceTree = "<group>"; };
+		CEAC91DE1C45016100D2CBDB /* GCQinTingLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCQinTingLogView.h; sourceTree = "<group>"; };
+		CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCQinTingLogView.m; sourceTree = "<group>"; };
+		CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCQinTingLogView.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +172,14 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */,
+				CEAC91DE1C45016100D2CBDB /* GCQinTingLogView.h */,
+				CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */,
+				CEAC91C81C44E06500D2CBDB /* GCBackGroundMusicVCTL.h */,
+				CEAC91C91C44E06500D2CBDB /* GCBackGroundMusicVCTL.m */,
+				CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */,
+				CE17C1571C43935100CAF3C5 /* Persion.h */,
+				CE17C1581C43935100CAF3C5 /* Persion.m */,
 				CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */,
 				CE963A8E1C1FF6D1009E5A33 /* CollectiveView */,
 				CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */,
@@ -164,7 +201,19 @@
 		CE963A8E1C1FF6D1009E5A33 /* CollectiveView */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC91CD1C44E1A600D2CBDB /* GCSectionHeaderView.m */,
 				CE46F2201C29651800E6874C /* GCMessageDetailView.h */,
+				CEAC91D01C44E1E400D2CBDB /* Utilities.h */,
+				CEAC91D11C44E1E400D2CBDB /* Utilities.m */,
+				CEAC91DC1C44E22A00D2CBDB /* CommonTypes.h */,
+				CEAC91D61C44E20C00D2CBDB /* NSString+TomAddition.h */,
+				CEAC91D71C44E20C00D2CBDB /* NSString+TomAddition.m */,
+				CEAC91D31C44E1F900D2CBDB /* NSDate+TomAddition.h */,
+				CEAC91D91C44E21300D2CBDB /* NSString+MD5Addition.h */,
+				CEAC91DD1C44E2D200D2CBDB /* GCDefines.h */,
+				CEAC91DA1C44E21300D2CBDB /* NSString+MD5Addition.m */,
+				CEAC91D41C44E1F900D2CBDB /* NSDate+TomAddition.m */,
+				CEAC91CF1C44E1AA00D2CBDB /* GCSectionHeaderView.h */,
 				CE46F2211C29651800E6874C /* GCMessageDetailView.m */,
 				CE46F2221C29651800E6874C /* GCMessageDetailView.xib */,
 				CE941C571C23D71900A24768 /* BlockBackground.h */,
@@ -340,7 +389,9 @@
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
+				CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */,
 				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
+				CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
@@ -374,16 +425,23 @@
 				CEA08AE21C27DE8100342B1D /* TableController.m in Sources */,
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
+				CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */,
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
+				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
+				CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
 				CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */,
 				CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */,
+				CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
+				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
+				CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
+				CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
