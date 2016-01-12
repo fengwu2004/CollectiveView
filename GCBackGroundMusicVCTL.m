@@ -178,6 +178,16 @@ typedef NS_ENUM(NSInteger, MusicType){
 	return cell;
 }
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+	
+	if (_ibScrollView != scrollView) {
+		
+		return;
+	}
+	
+	[_sectionHeader sectionHeaderViewScrollViewDidScroll:scrollView];
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 	
 	if (_ibScrollView != scrollView) {
