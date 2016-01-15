@@ -14,6 +14,8 @@
 #import "OCCallJavaScript.h"
 #import "UICopyLabel.h"
 #import "GCBackGroundMusicVCTL.h"
+#import "SearchVCTLViewController.h"
+#import "SearchTableViewController.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -228,6 +230,13 @@
 - (IBAction)onMusicPanle:(id)sender {
 	
 	GCBackGroundMusicVCTL *vctl = [[GCBackGroundMusicVCTL alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onSearch:(id)sender {
+	
+	SearchVCTLViewController *vctl = [[SearchVCTLViewController alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
 }

@@ -38,7 +38,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
                                 <state key="normal" title="送礼物"/>
                                 <connections>
-                                    <action selector="onMusicPanle:" destination="PeC-A0-1yf" eventType="touchUpInside" id="Hsr-Eq-0Z0"/>
+                                    <action selector="onSearch:" destination="PeC-A0-1yf" eventType="touchUpInside" id="zHG-8M-XHT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是用来复制用的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-tq-eWz">

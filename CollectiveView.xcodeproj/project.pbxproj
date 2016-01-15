@@ -11,6 +11,10 @@
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
 		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
 		CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F2221C29651800E6874C /* GCMessageDetailView.xib */; };
+		CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */; };
+		CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */; };
+		CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */; };
+		CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8B03FB1C4794B400F6AD9F /* SearchTableViewController.xib */; };
 		CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */; };
 		CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */; };
 		CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46091C34FE38001D79FA /* RunLoopTask.m */; };
@@ -71,6 +75,12 @@
 		CE46F2201C29651800E6874C /* GCMessageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageDetailView.h; sourceTree = "<group>"; };
 		CE46F2211C29651800E6874C /* GCMessageDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageDetailView.m; sourceTree = "<group>"; };
 		CE46F2221C29651800E6874C /* GCMessageDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCMessageDetailView.xib; sourceTree = "<group>"; };
+		CE8B03F31C476E0F00F6AD9F /* SearchVCTLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVCTLViewController.h; sourceTree = "<group>"; };
+		CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVCTLViewController.m; sourceTree = "<group>"; };
+		CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchVCTLViewController.xib; sourceTree = "<group>"; };
+		CE8B03F81C47924A00F6AD9F /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		CE8B03FB1C4794B400F6AD9F /* SearchTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewController.xib; sourceTree = "<group>"; };
 		CE8E46031C34F7EF001D79FA /* TestRunLoopVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunLoopVCTL.h; sourceTree = "<group>"; };
 		CE8E46041C34F7EF001D79FA /* TestRunLoopVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunLoopVCTL.m; sourceTree = "<group>"; };
 		CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestRunLoopVCTL.xib; sourceTree = "<group>"; };
@@ -172,6 +182,12 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CE8B03FB1C4794B400F6AD9F /* SearchTableViewController.xib */,
+				CE8B03F81C47924A00F6AD9F /* SearchTableViewController.h */,
+				CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */,
+				CE8B03F31C476E0F00F6AD9F /* SearchVCTLViewController.h */,
+				CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */,
+				CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */,
 				CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */,
 				CEAC91DE1C45016100D2CBDB /* GCQinTingLogView.h */,
 				CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */,
@@ -392,10 +408,12 @@
 				CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */,
 				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
 				CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */,
+				CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
+				CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +445,7 @@
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
 				CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */,
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
+				CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
 				CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */,
@@ -435,6 +454,7 @@
 				CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */,
 				CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
+				CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */,
 				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
 				CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
@@ -604,7 +624,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,7 +640,7 @@
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

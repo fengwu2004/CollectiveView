@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVCTLViewController">
+            <connections>
+                <outlet property="ibSearchBar" destination="UiT-f0-66c" id="lCz-oV-czA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UiT-f0-66c">
+                    <rect key="frame" x="0.0" y="61" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="I2c-cr-0L8"/>
+                    </connections>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-co-2aS">
+                    <rect key="frame" x="270" y="285" width="60" height="30"/>
+                    <state key="normal" title="搜索界面"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UiT-f0-66c" secondAttribute="trailing" id="6aH-ff-49f"/>
+                <constraint firstItem="UiT-f0-66c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="61" id="QMW-JK-Afi"/>
+                <constraint firstItem="mdr-co-2aS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i17-O1-7Yu"/>
+                <constraint firstItem="UiT-f0-66c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lr2-B5-tAG"/>
+                <constraint firstItem="mdr-co-2aS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xFe-Bg-mN6"/>
+            </constraints>
+            <point key="canvasLocation" x="474" y="329"/>
+        </view>
+    </objects>
+</document>
