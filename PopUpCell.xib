@@ -23,7 +23,7 @@
                             <constraint firstAttribute="width" secondItem="yEs-Bq-uyW" secondAttribute="height" multiplier="1:1" id="nGp-AP-BrS"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDj-gi-tLW">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDj-gi-tLW">
                         <rect key="frame" x="65" y="14" width="31" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,7 +42,7 @@
                 <outlet property="icon" destination="yEs-Bq-uyW" id="UVR-A3-v5E"/>
                 <outlet property="title" destination="CDj-gi-tLW" id="yJ5-db-A4K"/>
             </connections>
-            <point key="canvasLocation" x="196" y="229"/>
+            <point key="canvasLocation" x="200" y="214"/>
         </tableViewCell>
     </objects>
 </document>
