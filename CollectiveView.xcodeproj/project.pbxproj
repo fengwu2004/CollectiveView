@@ -11,6 +11,12 @@
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
 		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
 		CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F2221C29651800E6874C /* GCMessageDetailView.xib */; };
+		CE7EA1491C48D2BB00064A6A /* PopUpBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1481C48D2BB00064A6A /* PopUpBox.m */; };
+		CE7EA14C1C48D4BB00064A6A /* PopUpBoxItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA14B1C48D4BB00064A6A /* PopUpBoxItem.m */; };
+		CE7EA1501C48F4D800064A6A /* PopUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA14E1C48F4D800064A6A /* PopUpCell.m */; };
+		CE7EA1511C48F4D800064A6A /* PopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EA14F1C48F4D800064A6A /* PopUpCell.xib */; };
+		CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */; };
+		CE7EA1561C48F7A000064A6A /* PopUpTestVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */; };
 		CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */; };
 		CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */; };
 		CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */; };
@@ -75,6 +81,16 @@
 		CE46F2201C29651800E6874C /* GCMessageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageDetailView.h; sourceTree = "<group>"; };
 		CE46F2211C29651800E6874C /* GCMessageDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageDetailView.m; sourceTree = "<group>"; };
 		CE46F2221C29651800E6874C /* GCMessageDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCMessageDetailView.xib; sourceTree = "<group>"; };
+		CE7EA1471C48D2BB00064A6A /* PopUpBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpBox.h; sourceTree = "<group>"; };
+		CE7EA1481C48D2BB00064A6A /* PopUpBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpBox.m; sourceTree = "<group>"; };
+		CE7EA14A1C48D4BB00064A6A /* PopUpBoxItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpBoxItem.h; sourceTree = "<group>"; };
+		CE7EA14B1C48D4BB00064A6A /* PopUpBoxItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpBoxItem.m; sourceTree = "<group>"; };
+		CE7EA14D1C48F4D800064A6A /* PopUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpCell.h; sourceTree = "<group>"; };
+		CE7EA14E1C48F4D800064A6A /* PopUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpCell.m; sourceTree = "<group>"; };
+		CE7EA14F1C48F4D800064A6A /* PopUpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpCell.xib; sourceTree = "<group>"; };
+		CE7EA1521C48F7A000064A6A /* PopUpTestVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpTestVCTL.h; sourceTree = "<group>"; };
+		CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpTestVCTL.m; sourceTree = "<group>"; };
+		CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpTestVCTL.xib; sourceTree = "<group>"; };
 		CE8B03F31C476E0F00F6AD9F /* SearchVCTLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVCTLViewController.h; sourceTree = "<group>"; };
 		CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVCTLViewController.m; sourceTree = "<group>"; };
 		CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchVCTLViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +198,16 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CE7EA1521C48F7A000064A6A /* PopUpTestVCTL.h */,
+				CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */,
+				CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */,
+				CE7EA14D1C48F4D800064A6A /* PopUpCell.h */,
+				CE7EA14E1C48F4D800064A6A /* PopUpCell.m */,
+				CE7EA14F1C48F4D800064A6A /* PopUpCell.xib */,
+				CE7EA14A1C48D4BB00064A6A /* PopUpBoxItem.h */,
+				CE7EA14B1C48D4BB00064A6A /* PopUpBoxItem.m */,
+				CE7EA1471C48D2BB00064A6A /* PopUpBox.h */,
+				CE7EA1481C48D2BB00064A6A /* PopUpBox.m */,
 				CE8B03FB1C4794B400F6AD9F /* SearchTableViewController.xib */,
 				CE8B03F81C47924A00F6AD9F /* SearchTableViewController.h */,
 				CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */,
@@ -414,7 +440,9 @@
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */,
+				CE7EA1511C48F4D800064A6A /* PopUpCell.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
+				CE7EA1561C48F7A000064A6A /* PopUpTestVCTL.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,14 +470,18 @@
 			files = (
 				CEA08AE21C27DE8100342B1D /* TableController.m in Sources */,
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
+				CE7EA1501C48F4D800064A6A /* PopUpCell.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
 				CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */,
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
+				CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */,
 				CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
 				CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CE7EA14C1C48D4BB00064A6A /* PopUpBoxItem.m in Sources */,
+				CE7EA1491C48D2BB00064A6A /* PopUpBox.m in Sources */,
 				CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */,
 				CE8E46061C34F7EF001D79FA /* TestRunLoopVCTL.m in Sources */,
 				CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */,

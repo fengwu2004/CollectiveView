@@ -16,6 +16,9 @@
 #import "GCBackGroundMusicVCTL.h"
 #import "SearchVCTLViewController.h"
 #import "SearchTableViewController.h"
+#import "PopUpBoxItem.h"
+#import "PopUpBox.h"
+#import "PopUpTestVCTL.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -237,6 +240,13 @@
 - (IBAction)onSearch:(id)sender {
 	
 	SearchVCTLViewController *vctl = [[SearchVCTLViewController alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onPopUpTest:(id)sender {
+	
+	PopUpTestVCTL *vctl = [[PopUpTestVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
 }
