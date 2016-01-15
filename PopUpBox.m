@@ -87,4 +87,21 @@
 	return _dataSource.count;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	if (indexPath.row >= _dataSource.count) {
+		
+		return;
+	}
+	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	PopUpBoxItem *item = _dataSource[indexPath.row];
+	
+	if (item.block) {
+		
+		item.block();
+	}
+}
+
 @end

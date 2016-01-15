@@ -45,23 +45,15 @@
 	
 	PopUpBox *box = [[PopUpBox alloc] initWithFrame:CGRectMake(point.x, point.y, 120, 30 * 6) with:array];
 	
-	CGRect OrignalRect = box.bounds;
-	
-	CGRect minRect = CGRectMake(0, 0, 1, 1);
-	
-	box.bounds = minRect;
-	
-	box.center = point;
-	
-	box.clipsToBounds = YES;
+	box.frame = CGRectMake(point.x, point.y, 1, 1);
 	
 	[self.view addSubview:box];
 	
+	box.clipsToBounds = YES;
+	
 	[UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:1 initialSpringVelocity:5.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 		
-		box.center = CGPointMake(point.x + 60, point.y + 90);
-		
-		box.bounds = OrignalRect;
+		box.frame = CGRectMake(point.x, point.y, 120, 180);
 		
 	} completion:nil];
 }
