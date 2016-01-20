@@ -15,22 +15,30 @@
 	
 	[super viewDidLoad];
 	
-	NSString *urlString = @"http://127.0.0.1/web/1.html";
-	
-	NSURL *url = [NSURL URLWithString:urlString];
-	
-	NSURLRequest *request = [NSURLRequest requestWithURL:url];
+	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ganliao.qiniudn.com/giftshop.html"]];
 	
 	[_ibWebView loadRequest:request];
+	
+	JSContext *context = [_ibWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+	
+	context[@"retriveGiftData"] = ^NSArray*(){
+		
+		NSArray *array = @[@"1", @"2", @"3"];
+		
+		return array;
+	};
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 	
 	JSContext *context = [_ibWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
 	
-	NSString *jsCode = @"alert('test js oc')";
-	
-	[context evaluateScript:jsCode];
+	context[@"retriveGiftData"] = ^NSArray*(){
+		
+		NSArray *array = @[@"1", @"2", @"3"];
+		
+		return array;
+	};
 }
 
 

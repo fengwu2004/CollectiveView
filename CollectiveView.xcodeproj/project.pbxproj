@@ -37,6 +37,7 @@
 		CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AA91C1FF716009E5A33 /* GCGiftView.m */; };
 		CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */; };
 		CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */; };
+		CE971A581C4F9957002CA670 /* giftshop.html in Resources */ = {isa = PBXBuildFile; fileRef = CE971A571C4F9957002CA670 /* giftshop.html */; };
 		CEA08AE21C27DE8100342B1D /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA08AE01C27DE8100342B1D /* TableController.m */; };
 		CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA08AE11C27DE8100342B1D /* TableController.xib */; };
 		CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */; };
@@ -52,6 +53,8 @@
 		CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */; };
 		CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
+		CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */; };
+		CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +131,7 @@
 		CE963AAB1C1FFEBE009E5A33 /* GCGiftCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGiftCollectCell.h; sourceTree = "<group>"; };
 		CE963AAC1C1FFEBE009E5A33 /* GCGiftCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGiftCollectCell.m; sourceTree = "<group>"; };
 		CE963AAD1C1FFEBE009E5A33 /* GCGiftCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCGiftCollectCell.xib; sourceTree = "<group>"; };
+		CE971A571C4F9957002CA670 /* giftshop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = giftshop.html; sourceTree = "<group>"; };
 		CEA08ADF1C27DE8100342B1D /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		CEA08AE01C27DE8100342B1D /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		CEA08AE11C27DE8100342B1D /* TableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableController.xib; sourceTree = "<group>"; };
@@ -155,6 +159,9 @@
 		CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCQinTingLogView.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
+		CEC661E01C4DDBB700ED1515 /* GCIdentityInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCIdentityInputView.h; sourceTree = "<group>"; };
+		CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCIdentityInputView.m; sourceTree = "<group>"; };
+		CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCIdentityInputView.xib; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -222,6 +229,9 @@
 				CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */,
 				CE17C1571C43935100CAF3C5 /* Persion.h */,
 				CE17C1581C43935100CAF3C5 /* Persion.m */,
+				CEC661E01C4DDBB700ED1515 /* GCIdentityInputView.h */,
+				CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */,
+				CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */,
 				CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */,
 				CE963A8E1C1FF6D1009E5A33 /* CollectiveView */,
 				CEDA0ADE1C2A9E0B00A25E20 /* CollectiveViewUITests */,
@@ -295,6 +305,7 @@
 				CEB8C0611C3A89640010110E /* UICopyLabel.m */,
 				CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */,
 				CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */,
+				CE971A571C4F9957002CA670 /* giftshop.html */,
 				CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */,
 			);
 			path = CollectiveView;
@@ -434,9 +445,11 @@
 				CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */,
 				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
 				CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */,
+				CE971A581C4F9957002CA670 /* giftshop.html in Resources */,
 				CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
+				CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */,
@@ -487,6 +500,7 @@
 				CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */,
+				CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */,
 				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
 				CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
