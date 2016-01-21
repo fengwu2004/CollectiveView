@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, GCGiftSendedFromPlace) {
 @interface GCGift : NSObject
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *imageUrl;
+@property (nonatomic, copy) NSString *imageurl;
 @property (nonatomic) int giftID;
 
 @property (nonatomic) int charming;

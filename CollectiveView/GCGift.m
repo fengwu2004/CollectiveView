@@ -28,7 +28,7 @@
   
   _giftID = [[dictionary objectForKey:kID] intValue];
 
-  _imageUrl= [[dictionary objectForKey:kImageURL] copy];
+  _imageurl= [[dictionary objectForKey:kImageURL] copy];
   
   _coin = [[dictionary objectForKey:kCoin] intValue];
   

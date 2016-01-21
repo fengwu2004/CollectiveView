@@ -22,9 +22,19 @@
 	
 	JSContext *context = [_ibWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
 	
+	NSDictionary *gift0 = @{@"name":@"别墅", @"coin":@20, @"charming":@120, @"imageurl":@"http://staticnova.ruoogle.com/gift/giftn12.png"};
+	
+	NSDictionary *gift1 = @{@"name":@"跑车", @"coin":@20, @"charming":@120, @"imageurl":@"http://staticnova.ruoogle.com/gift/giftn11.png"};
+	
+	NSDictionary *gift2 = @{@"name":@"钻石", @"coin":@20, @"charming":@120, @"imageurl":@"http://staticnova.ruoogle.com/gift/giftn104.png"};
+	
+	NSDictionary *gift3 = @{@"name":@"包包", @"coin":@20, @"charming":@120, @"imageurl":@"http://staticnova.ruoogle.com/gift/giftn103.png"};
+	
+	NSDictionary *gift4 = @{@"name":@"充气", @"coin":@20, @"charming":@120, @"imageurl":@"http://staticnova.ruoogle.com/gift/giftn102.png"};
+	
 	context[@"retriveGiftData"] = ^NSArray*(){
 		
-		NSArray *array = @[@"1", @"2", @"3"];
+		NSArray *array = @[gift0, gift1, gift2, gift3, gift4];
 		
 		return array;
 	};
@@ -40,32 +50,9 @@
 	
 	gift0.charming = charm;
 	
-	gift0.imageUrl = imageUrl;
+	gift0.imageurl = imageUrl;
 
 	return gift0;
 }
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-	
-	JSContext *context = [_ibWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-	
-	GCGift *gift0 = [self createGift:@"别墅" coin:20 charming:120 imageUrl:@"http://staticnova.ruoogle.com/gift/giftn12.png"];
-	
-	GCGift *gift1 = [self createGift:@"跑车" coin:20 charming:120 imageUrl:@"http://staticnova.ruoogle.com/gift/giftn11.png"];
-	
-	GCGift *gift2 = [self createGift:@"钻石" coin:20 charming:120 imageUrl:@"http://staticnova.ruoogle.com/gift/giftn104.png"];
-	
-	GCGift *gift3 = [self createGift:@"包包" coin:20 charming:120 imageUrl:@"http://staticnova.ruoogle.com/gift/giftn103.png"];
-	
-	GCGift *gift4 = [self createGift:@"充气娃娃" coin:20 charming:120 imageUrl:@"http://staticnova.ruoogle.com/gift/giftn102.png"];
-	
-	context[@"retriveGiftData"] = ^NSArray*(){
-		
-		NSArray *array = @[gift0, gift1, gift2, gift3, gift4];
-		
-		return array;
-	};
-}
-
 
 @end

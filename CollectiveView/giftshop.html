@@ -1,93 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-<title>无标题文档</title>
-</head>
-
-<style type="text/css">
-.cell {
-	float:left;
-    background:rgba(255, 255, 255, 0.5);
-	width:45%;
-    border:1px solid #000000;
-}
-
-.cell p {
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.text {
-    float: left;    
-}
-
-.boldText {
-    font-weight:600;
-    color:red;
-}
-
-.cell img {
-    float: left;
-    width: 20%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-</style>
-<script>
-   
-   var gift0 = {
-       vipCost:100,
-       amount:0,
-       charming:240000,
-       coin:20,
-       name:"别墅",
-       image_url:"http://staticnova.ruoogle.com/gift/giftn12.png"
-   };
-   
-   var gift1 = {
-       vipCost:100,
-       amount:0,
-       charming:600,
-       coin:20,
-       name:"跑车",
-       image_url:"http://staticnova.ruoogle.com/gift/giftn11.png"
-   };
-   
-   var gift2 = {
-       vipCost:100,
-       amount:0,
-       charming:600,
-       coin:20,
-       name:"钻石",
-       image_url:"http://staticnova.ruoogle.com/gift/giftn104.png"
-   };
-   
-   var gift3 = {
-       vipCost:100,
-       amount:0,
-       charming:600,
-       coin:20,
-       name:"包包",
-       image_url:"http://staticnova.ruoogle.com/gift/giftn103.png"
-   };
-   
-   var gift4 = {
-       vipCost:100,
-       amount:0,
-       charming:600,
-       coin:20,
-       name:"充气娃娃",
-       image_url:"http://staticnova.ruoogle.com/gift/giftn102.png"
-   };
-    
-   window.onload = function() { appendText(); }
-     
-   function appendText()
-   {
-		var dataSource = retriveGiftData();
-		 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+		<title>无标题文档</title>
+	</head>
+	
+	<style type="text/css">
+    .cell {
+        float:left;
+        background:rgba(255, 255, 255, 0.5);
+        margin-left: 1px;
+        width:45%;
+        border:1px solid #000000;
+    }
+	
+	.cell p {
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	
+	.text {
+		float: left;
+	}
+	
+	.boldText {
+		font-weight:600;
+		color:red;
+	}
+	
+	.cell img {
+		float: left;
+		width: 20%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	</style>
+	<script>
+		
+    // window.onload = function() { refreshWeb(); }
+		
+    function refreshWeb()
+    {
+        var dataSource = retriveGiftData();
+        
         for (var i = 0; i < dataSource.length; ++i)
         {
             var parentDiv = $("<div></div>");
@@ -102,7 +58,7 @@
             
             parentDiv.append(leftDiv);
             
-            if (i + 1 < dataSource.length) 
+            if (i + 1 < dataSource.length)
             {
                 var right = dataSource[i + 1];
                 
@@ -120,45 +76,45 @@
             ++i;
         }
     };
-    
-    function setCell(div, value)
-    {
-        var imgDiv = $("<div></div>");
-        
-        var img = $("<img/>").attr("src", value.image_url);
-        
-        imgDiv.append(img);
-        
-        div.append(imgDiv);
-        
-        var textDiv = $("<div></div>");
-        
-        textDiv.addClass("text");
-        
-        var vipCost = $("<p/>").text("会员价" + value.vipCost);
-        
-        vipCost.addClass("boldText");
-        
-        textDiv.append(vipCost);
-        
-        var name = $("<p/>").text(value.name);
-        
-        textDiv.append(name);
-        
-        var charm = $("<p/>").text("魅力值+" + value.charming);
-        
-        textDiv.append(charm);
-        
-        var gold = $("<p/>").text(value.coin + "金豆");
-        
-        textDiv.append(gold);
-        
-        div.append(textDiv);
-    }
-    
-</script>
-
-<body>
-    
-</body>
+	
+	function setCell(div, value)
+	{
+		var imgDiv = $("<div></div>");
+		
+		var img = $("<img/>").attr("src", value.imageurl);
+		
+		imgDiv.append(img);
+		
+		div.append(imgDiv);
+		
+		var textDiv = $("<div></div>");
+		
+		textDiv.addClass("text");
+		
+		var vipCost = $("<p/>").text("会员价" + value.vipCost);
+		
+		vipCost.addClass("boldText");
+		
+		textDiv.append(vipCost);
+		
+		var name = $("<p/>").text(value.name);
+		
+		textDiv.append(name);
+		
+		var charm = $("<p/>").text("魅力值+" + value.charming);
+		
+		textDiv.append(charm);
+		
+		var gold = $("<p/>").text(value.coin + "金豆");
+		
+		textDiv.append(gold);
+		
+		div.append(textDiv);
+	}
+	
+		</script>
+	
+	<body>
+		
+	</body>
 </html>
