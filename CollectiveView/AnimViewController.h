@@ -10,4 +10,6 @@
 
 @interface AnimViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UILabel *ibLabel;
+
 @end

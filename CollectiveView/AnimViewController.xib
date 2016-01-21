@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimViewController">
             <connections>
+                <outlet property="ibLabel" destination="Eo0-id-li3" id="YCE-Wa-vFS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,10 +24,18 @@
                         <action selector="onDetailClick:" destination="-1" eventType="touchUpInside" id="drw-Or-doF"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eo0-id-li3">
+                    <rect key="frame" x="279" y="290" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Eo0-id-li3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9V0-MS-GKB"/>
                 <constraint firstItem="XxM-ip-c7a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bwc-Nj-ISS"/>
+                <constraint firstItem="Eo0-id-li3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oYB-5g-lG2"/>
                 <constraint firstAttribute="bottom" secondItem="XxM-ip-c7a" secondAttribute="bottom" constant="128" id="rJD-rZ-Oab"/>
             </constraints>
             <point key="canvasLocation" x="138" y="447"/>

@@ -46,6 +46,39 @@
 	return nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+	
+	[super viewDidAppear:animated];
+	
+	long long value = 99900000000000;
+	
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+		
+		long long j = 0, m = 0, k = 0;
+		
+		for (long long i = 0; i < value;) {
+			
+			++j;
+			
+			if (j % 1000 == 0) {
+    
+				++m;
+				
+				k = pow(10, m);
+				
+				j = 0;
+			}
+			
+			i = MIN(value, i + k);
+			
+			dispatch_sync(dispatch_get_main_queue(), ^{
+				
+				[_ibLabel setText:[NSString stringWithFormat:@"%lld", i]];
+			});
+		}
+	});
+}
+
 - (IBAction)onDetailClick:(id)sender {
 	
 	if (!_messagePopUp) {
