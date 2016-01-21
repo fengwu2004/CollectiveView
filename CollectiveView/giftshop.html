@@ -28,7 +28,11 @@
 		font-weight:600;
 		color:red;
 	}
-	
+    
+	.textUnValid{
+        text-decoration:line-through;
+    }
+    
 	.cell img {
 		float: left;
 		width: 20%;
@@ -43,8 +47,6 @@
     function refreshWeb()
     {
         var dataSource = retriveGiftData();
-        
-        alert(dataSource.length);
         
         for (var i = 0; i < dataSource.length; ++i)
         {
@@ -83,7 +85,7 @@
 	{
 		var imgDiv = $("<div></div>");
 		
-		var img = $("<img/>").attr("src", value.imageurl);
+		var img = $("<img/>").attr("src", value.image_url);
 		
 		imgDiv.append(img);
 		
@@ -93,15 +95,17 @@
 		
 		textDiv.addClass("text");
 		
-		var vipCost = $("<p/>").text("会员价" + value.vipCost);
+		var vipCost = $("<p/>").text("会员价" + value.vip_coin);
 		
 		vipCost.addClass("boldText");
+        
+        textDiv.append(vipCost);
+        
+        var cost = $("<p/>").text("会员价" + value.coin);
+        
+        cost.addClass("textUnValid");
 		
-		textDiv.append(vipCost);
-		
-		var name = $("<p/>").text(value.name);
-		
-		textDiv.append(name);
+		textDiv.append(cost);
 		
 		var charm = $("<p/>").text("魅力值+" + value.charming);
 		
@@ -110,6 +114,12 @@
 		var gold = $("<p/>").text(value.coin + "金豆");
 		
 		textDiv.append(gold);
+        
+        var name = $("<p/>").text(value.name);
+        
+        name.css("color", "yellow");
+		
+		textDiv.append(name);
 		
 		div.append(textDiv);
 	}
