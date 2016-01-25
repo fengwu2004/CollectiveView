@@ -17,6 +17,8 @@
 		CE7EA1511C48F4D800064A6A /* PopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EA14F1C48F4D800064A6A /* PopUpCell.xib */; };
 		CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */; };
 		CE7EA1561C48F7A000064A6A /* PopUpTestVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */; };
+		CE898AD61C5637AD005868CC /* GCShowRoomNameVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CE898AD51C5637AD005868CC /* GCShowRoomNameVCTL.m */; };
+		CE898AD81C5637CF005868CC /* GCShowRoomNameVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE898AD71C5637CF005868CC /* GCShowRoomNameVCTL.xib */; };
 		CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */; };
 		CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */; };
 		CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8B03F91C47924A00F6AD9F /* SearchTableViewController.m */; };
@@ -44,6 +46,13 @@
 		CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */; };
 		CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */; };
 		CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */; };
+		CEA9C28B1C50F7DD00740B9F /* lw_gift20.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2831C50F7DD00740B9F /* lw_gift20.png */; };
+		CEA9C28C1C50F7DD00740B9F /* lw_gift30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2841C50F7DD00740B9F /* lw_gift30.png */; };
+		CEA9C28D1C50F7DD00740B9F /* lw_gift40.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2851C50F7DD00740B9F /* lw_gift40.png */; };
+		CEA9C28E1C50F7DD00740B9F /* lw_gift50 in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2861C50F7DD00740B9F /* lw_gift50 */; };
+		CEA9C28F1C50F7DD00740B9F /* lw_gift60 in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2871C50F7DD00740B9F /* lw_gift60 */; };
+		CEA9C2901C50F7DD00740B9F /* lw_gift70.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2881C50F7DD00740B9F /* lw_gift70.png */; };
+		CEA9C2911C50F7DD00740B9F /* lw_gift80.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2891C50F7DD00740B9F /* lw_gift80.png */; };
 		CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91C91C44E06500D2CBDB /* GCBackGroundMusicVCTL.m */; };
 		CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */; };
 		CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91CD1C44E1A600D2CBDB /* GCSectionHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -95,6 +104,9 @@
 		CE7EA1521C48F7A000064A6A /* PopUpTestVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpTestVCTL.h; sourceTree = "<group>"; };
 		CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpTestVCTL.m; sourceTree = "<group>"; };
 		CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpTestVCTL.xib; sourceTree = "<group>"; };
+		CE898AD41C5637AD005868CC /* GCShowRoomNameVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCShowRoomNameVCTL.h; sourceTree = "<group>"; };
+		CE898AD51C5637AD005868CC /* GCShowRoomNameVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCShowRoomNameVCTL.m; sourceTree = "<group>"; };
+		CE898AD71C5637CF005868CC /* GCShowRoomNameVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCShowRoomNameVCTL.xib; sourceTree = "<group>"; };
 		CE8B03F31C476E0F00F6AD9F /* SearchVCTLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVCTLViewController.h; sourceTree = "<group>"; };
 		CE8B03F41C476E0F00F6AD9F /* SearchVCTLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVCTLViewController.m; sourceTree = "<group>"; };
 		CE8B03F51C476E0F00F6AD9F /* SearchVCTLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchVCTLViewController.xib; sourceTree = "<group>"; };
@@ -142,6 +154,13 @@
 		CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJavaScript.h; sourceTree = "<group>"; };
 		CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJavaScript.m; sourceTree = "<group>"; };
 		CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallJavaScript.xib; sourceTree = "<group>"; };
+		CEA9C2831C50F7DD00740B9F /* lw_gift20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift20.png; sourceTree = "<group>"; };
+		CEA9C2841C50F7DD00740B9F /* lw_gift30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift30.png; sourceTree = "<group>"; };
+		CEA9C2851C50F7DD00740B9F /* lw_gift40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift40.png; sourceTree = "<group>"; };
+		CEA9C2861C50F7DD00740B9F /* lw_gift50 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lw_gift50; sourceTree = "<group>"; };
+		CEA9C2871C50F7DD00740B9F /* lw_gift60 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lw_gift60; sourceTree = "<group>"; };
+		CEA9C2881C50F7DD00740B9F /* lw_gift70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift70.png; sourceTree = "<group>"; };
+		CEA9C2891C50F7DD00740B9F /* lw_gift80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift80.png; sourceTree = "<group>"; };
 		CEAC91C81C44E06500D2CBDB /* GCBackGroundMusicVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBackGroundMusicVCTL.h; sourceTree = "<group>"; };
 		CEAC91C91C44E06500D2CBDB /* GCBackGroundMusicVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBackGroundMusicVCTL.m; sourceTree = "<group>"; };
 		CEAC91CA1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCBackGroundMusicVCTL.xib; sourceTree = "<group>"; };
@@ -208,6 +227,9 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CE898AD71C5637CF005868CC /* GCShowRoomNameVCTL.xib */,
+				CE898AD41C5637AD005868CC /* GCShowRoomNameVCTL.h */,
+				CE898AD51C5637AD005868CC /* GCShowRoomNameVCTL.m */,
 				CE7EA1521C48F7A000064A6A /* PopUpTestVCTL.h */,
 				CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */,
 				CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */,
@@ -311,6 +333,13 @@
 				CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */,
 				CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */,
 				CE971A571C4F9957002CA670 /* giftshop.html */,
+				CEA9C2831C50F7DD00740B9F /* lw_gift20.png */,
+				CEA9C2841C50F7DD00740B9F /* lw_gift30.png */,
+				CEA9C2851C50F7DD00740B9F /* lw_gift40.png */,
+				CEA9C2861C50F7DD00740B9F /* lw_gift50 */,
+				CEA9C2871C50F7DD00740B9F /* lw_gift60 */,
+				CEA9C2881C50F7DD00740B9F /* lw_gift70.png */,
+				CEA9C2891C50F7DD00740B9F /* lw_gift80.png */,
 				CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */,
 			);
 			path = CollectiveView;
@@ -443,20 +472,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9C28C1C50F7DD00740B9F /* lw_gift30.png in Resources */,
 				CE963A9F1C1FF6D1009E5A33 /* LaunchScreen.storyboard in Resources */,
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
+				CEA9C2911C50F7DD00740B9F /* lw_gift80.png in Resources */,
+				CE898AD81C5637CF005868CC /* GCShowRoomNameVCTL.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
 				CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */,
+				CEA9C2901C50F7DD00740B9F /* lw_gift70.png in Resources */,
 				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
+				CEA9C28B1C50F7DD00740B9F /* lw_gift20.png in Resources */,
 				CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */,
 				CE971A581C4F9957002CA670 /* giftshop.html in Resources */,
+				CEA9C28D1C50F7DD00740B9F /* lw_gift40.png in Resources */,
 				CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
+				CEA9C28F1C50F7DD00740B9F /* lw_gift60 in Resources */,
+				CEA9C28E1C50F7DD00740B9F /* lw_gift50 in Resources */,
 				CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */,
 				CE7EA1511C48F4D800064A6A /* PopUpCell.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
@@ -513,6 +550,7 @@
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
 				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
+				CE898AD61C5637AD005868CC /* GCShowRoomNameVCTL.m in Sources */,
 				CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);

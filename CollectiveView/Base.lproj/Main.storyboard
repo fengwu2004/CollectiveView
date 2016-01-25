@@ -38,7 +38,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
                                 <state key="normal" title="送礼物"/>
                                 <connections>
-                                    <action selector="testJs:" destination="PeC-A0-1yf" eventType="touchUpInside" id="2sz-po-Hvf"/>
+                                    <action selector="onChangeName:" destination="PeC-A0-1yf" eventType="touchUpInside" id="heH-AS-ruv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是用来复制用的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-tq-eWz">
@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1Z-rg-hUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="294"/>
+            <point key="canvasLocation" x="40" y="251"/>
         </scene>
     </scenes>
 </document>

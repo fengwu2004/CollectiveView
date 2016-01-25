@@ -19,6 +19,7 @@
 #import "PopUpBoxItem.h"
 #import "PopUpBox.h"
 #import "PopUpTestVCTL.h"
+#import "GCShowRoomNameVCTL.h"
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -52,7 +53,7 @@
 	
 	NSLog(@"%lx", (long)str2);
 	
-	[str appendString:@"ef"];
+	[str appendString:@"ef"];	
 }
 
 - (void)onTapBilibili:(UITapGestureRecognizer*)sender {
@@ -247,6 +248,13 @@
 - (IBAction)onPopUpTest:(id)sender {
 	
 	PopUpTestVCTL *vctl = [[PopUpTestVCTL alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onChangeName:(id)sender {
+	
+	GCShowRoomNameVCTL *vctl = [[GCShowRoomNameVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
 }

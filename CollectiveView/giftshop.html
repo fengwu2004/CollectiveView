@@ -7,11 +7,16 @@
 	</head>
 	
 	<style type="text/css">
+    
+    #body{
+        background-color:rgba(201, 201, 201, 0.5);
+    }
     .cell {
         float:left;
         background:rgba(255, 255, 255, 0.5);
-        margin-left: 1px;
-        width:45%;
+        margin-left: 0px;
+        width: 50%;
+        box-sizing:border-box;
         border:1px solid #000000;
     }
 	
@@ -39,13 +44,56 @@
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+	
 	</style>
 	<script>
+        
+     var gift0 = {
+         coin:20,
+         name:"别墅",
+         imageurl:"http://staticnova.ruoogle.com/gift/giftn12.png",
+         charming:20210,
+     };
+     
+     var gift1 = {
+         coin:20,
+         name:"别墅",
+         imageurl:"http://staticnova.ruoogle.com/gift/giftn12.png",
+         charming:20210,
+     };
+     
+     var gift2 = {
+         coin:20,
+         name:"别墅",
+         imageurl:"http://staticnova.ruoogle.com/gift/giftn12.png",
+         charming:20210,
+     };
+     
+     var gift3 = {
+         coin:20,
+         name:"别墅",
+         imageurl:"http://staticnova.ruoogle.com/gift/giftn12.png",
+         charming:20210,
+     };
+     
+     var gift4 = {
+         coin:20,
+         name:"别墅",
+         imageurl:"http://staticnova.ruoogle.com/gift/giftn12.png",
+         charming:20210,
+     };
 		
-    // window.onload = function() { refreshWeb(); }
+    window.onload = function() { refreshWeb(); }
 		
+    function retriveGiftData() 
+    {
+       return new Array(gift0, gift1, gift2, gift3, gift4);    
+    }
+    
     function refreshWeb()
     {
+        alert("12122");
+        
         var dataSource = retriveGiftData();
         
         for (var i = 0; i < dataSource.length; ++i)
@@ -85,7 +133,7 @@
 	{
 		var imgDiv = $("<div></div>");
 		
-		var img = $("<img/>").attr("src", value.image_url);
+		var img = $("<img/>").attr("src", value.imageurl);
 		
 		imgDiv.append(img);
 		
@@ -126,7 +174,13 @@
 	
 		</script>
 	
-	<body>
+	<body style="
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgba(201, 201, 201, 0.5);
+">
 		
 	</body>
 </html>
