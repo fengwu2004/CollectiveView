@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */; };
 		CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F21C1C2964FE00E6874C /* AnimViewController.m */; };
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
 		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
@@ -90,6 +91,7 @@
 /* Begin PBXFileReference section */
 		CE17C1571C43935100CAF3C5 /* Persion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
 		CE17C1581C43935100CAF3C5 /* Persion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
+		CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
 		CE46F21B1C2964FE00E6874C /* AnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimViewController.h; sourceTree = "<group>"; };
 		CE46F21C1C2964FE00E6874C /* AnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimViewController.m; sourceTree = "<group>"; };
 		CE46F21D1C2964FE00E6874C /* AnimViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimViewController.xib; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +235,7 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */,
 				CEB0435C1C604BE80042078D /* InkeStyleVCTL.h */,
 				CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */,
 				CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */,

@@ -273,7 +273,9 @@
 
 - (void)test {
 	
-	AFHTTPSessionManager
+	AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
+	
+	
 }
 
 @end

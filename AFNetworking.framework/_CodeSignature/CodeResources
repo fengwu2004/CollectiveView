@@ -4,25 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
+		<key>Headers/AFHTTPSessionManager.h</key>
 		<data>
-		xG+qmjcZvw+VGBFPgKsB4KIWZz4=
+		5slN7dxbcHI8ztttq78TR9W/ghs=
 		</data>
-		<key>Headers/.DS_Store</key>
+		<key>Headers/AFNetworkReachabilityManager.h</key>
 		<data>
-		gd4Hsa4gbtq3oFEhYJfqR5vqmWg=
+		zVHUHrs/U93x+k7MdueCZBXAM5Y=
 		</data>
 		<key>Headers/AFNetworking.h</key>
 		<data>
-		xkytGO+/IBxsPwXHeRi/9ctTPGY=
+		AFv03ZXPPEIZ/1OP4o2VKtiehNw=
+		</data>
+		<key>Headers/AFSecurityPolicy.h</key>
+		<data>
+		Pjdyrl66mHpvZ7OUS6Bb2LlzOAE=
+		</data>
+		<key>Headers/AFURLRequestSerialization.h</key>
+		<data>
+		pnPoCplr7w0H3W8/Vtn7AD96H0U=
+		</data>
+		<key>Headers/AFURLResponseSerialization.h</key>
+		<data>
+		ONakcav19+GG+V4u0YY5UwHuuHs=
+		</data>
+		<key>Headers/AFURLSessionManager.h</key>
+		<data>
+		7h0gFlR/ErfiwBRe6I1HgKIDArE=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		ifz1jXN8rKCEYcpZgbfYJUVCHoE=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		necIgnQevsMxczeHXHPHeWuf8/Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,9 +43,33 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AFHTTPSessionManager.h</key>
+		<data>
+		5slN7dxbcHI8ztttq78TR9W/ghs=
+		</data>
+		<key>Headers/AFNetworkReachabilityManager.h</key>
+		<data>
+		zVHUHrs/U93x+k7MdueCZBXAM5Y=
+		</data>
 		<key>Headers/AFNetworking.h</key>
 		<data>
-		xkytGO+/IBxsPwXHeRi/9ctTPGY=
+		AFv03ZXPPEIZ/1OP4o2VKtiehNw=
+		</data>
+		<key>Headers/AFSecurityPolicy.h</key>
+		<data>
+		Pjdyrl66mHpvZ7OUS6Bb2LlzOAE=
+		</data>
+		<key>Headers/AFURLRequestSerialization.h</key>
+		<data>
+		pnPoCplr7w0H3W8/Vtn7AD96H0U=
+		</data>
+		<key>Headers/AFURLResponseSerialization.h</key>
+		<data>
+		ONakcav19+GG+V4u0YY5UwHuuHs=
+		</data>
+		<key>Headers/AFURLSessionManager.h</key>
+		<data>
+		7h0gFlR/ErfiwBRe6I1HgKIDArE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

@@ -7,8 +7,9 @@
 //
 
 #import "OCCallJavaScript.h"
-#import <JavaScriptCore/JavaScriptCore.h>
 #import "GCGift.h"
+
+@import JavaScriptCore;
 
 @implementation OCCallJavaScript
 
