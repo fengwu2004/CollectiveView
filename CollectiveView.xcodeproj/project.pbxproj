@@ -62,6 +62,8 @@
 		CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91DA1C44E21300D2CBDB /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */; };
 		CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */; };
+		CEB0435F1C604BE80042078D /* InkeStyleVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */; };
+		CEB043601C604BE80042078D /* InkeStyleVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
 		CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */; };
 		CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */; };
@@ -179,6 +181,9 @@
 		CEAC91DE1C45016100D2CBDB /* GCQinTingLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCQinTingLogView.h; sourceTree = "<group>"; };
 		CEAC91DF1C45016100D2CBDB /* GCQinTingLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCQinTingLogView.m; sourceTree = "<group>"; };
 		CEAC91E11C45016B00D2CBDB /* GCQinTingLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCQinTingLogView.xib; sourceTree = "<group>"; };
+		CEB0435C1C604BE80042078D /* InkeStyleVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InkeStyleVCTL.h; sourceTree = "<group>"; };
+		CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InkeStyleVCTL.m; sourceTree = "<group>"; };
+		CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InkeStyleVCTL.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
 		CEC661E01C4DDBB700ED1515 /* GCIdentityInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCIdentityInputView.h; sourceTree = "<group>"; };
@@ -227,6 +232,9 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEB0435C1C604BE80042078D /* InkeStyleVCTL.h */,
+				CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */,
+				CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */,
 				CE898AD71C5637CF005868CC /* GCShowRoomNameVCTL.xib */,
 				CE898AD41C5637AD005868CC /* GCShowRoomNameVCTL.h */,
 				CE898AD51C5637AD005868CC /* GCShowRoomNameVCTL.m */,
@@ -433,6 +441,7 @@
 					};
 					CE963A8B1C1FF6D1009E5A33 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6URA9L9CB5;
 					};
 					CEDA0ADC1C2A9E0B00A25E20 = {
 						CreatedOnToolsVersion = 7.1;
@@ -474,6 +483,7 @@
 			files = (
 				CEA9C28C1C50F7DD00740B9F /* lw_gift30.png in Resources */,
 				CE963A9F1C1FF6D1009E5A33 /* LaunchScreen.storyboard in Resources */,
+				CEB043601C604BE80042078D /* InkeStyleVCTL.xib in Resources */,
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CEA9C2911C50F7DD00740B9F /* lw_gift80.png in Resources */,
@@ -552,6 +562,7 @@
 				CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */,
 				CE898AD61C5637AD005868CC /* GCShowRoomNameVCTL.m in Sources */,
 				CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */,
+				CEB0435F1C604BE80042078D /* InkeStyleVCTL.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,14 +722,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Ruguo Internet Science Technology Co.,Ltd. (6URA9L9CB5)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				PROVISIONING_PROFILE = "ecba37cf-65f0-498d-b971-07ef0845ffcc";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Debug;
@@ -727,14 +743,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CollectiveView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d2d2ad50-8c44-44fa-8224-792e06ad3144";
+				PROVISIONING_PROFILE = "ecba37cf-65f0-498d-b971-07ef0845ffcc";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Release;

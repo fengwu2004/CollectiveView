@@ -20,6 +20,9 @@
 #import "PopUpBox.h"
 #import "PopUpTestVCTL.h"
 #import "GCShowRoomNameVCTL.h"
+#import "InkeStyleVCTL.h"
+
+@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -53,7 +56,9 @@
 	
 	NSLog(@"%lx", (long)str2);
 	
-	[str appendString:@"ef"];	
+	[str appendString:@"ef"];
+	
+	
 }
 
 - (void)onTapBilibili:(UITapGestureRecognizer*)sender {
@@ -257,6 +262,18 @@
 	GCShowRoomNameVCTL *vctl = [[GCShowRoomNameVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onInkeStyleVCTL:(id)sender {
+	
+	InkeStyleVCTL *vctl = [[InkeStyleVCTL alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (void)test {
+	
+	AFHTTPSessionManager
 }
 
 @end
