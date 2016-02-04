@@ -97,19 +97,19 @@
 		return;
 	}
 	
-//	CGFloat offsetY = scrollView.contentOffset.y - _contentOffsetY;
-//	
-//	offsetY = _navigationBar.center.y - offsetY;
-//	
-//	offsetY = MIN(offsetY, 42);
-//	
-//	offsetY = MAX(offsetY, -22);
-//	
-//	_navigationBar.center = CGPointMake(_navigationBar.center.x, offsetY);
-//	
-//	_ibTableView.center = CGPointMake(_ibTableView.center.x, _originalTableCenterY + offsetY - _originalCenterY);
-//	
-//	NSLog(@"%@", NSStringFromCGRect(_ibTableView.frame));
+	CGFloat offsetY = scrollView.contentOffset.y - _contentOffsetY;
+	
+	offsetY = _navigationBar.center.y - offsetY;
+	
+	offsetY = MIN(offsetY, 42);
+	
+	offsetY = MAX(offsetY, -22);
+	
+	_navigationBar.center = CGPointMake(_navigationBar.center.x, offsetY);
+	
+	_ibTableView.center = CGPointMake(_ibTableView.center.x, _originalTableCenterY + offsetY - _originalCenterY);
+	
+	NSLog(@"%@", NSStringFromCGRect(_ibTableView.frame));
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

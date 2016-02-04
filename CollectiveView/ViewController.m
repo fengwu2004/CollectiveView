@@ -21,16 +21,19 @@
 #import "PopUpTestVCTL.h"
 #import "GCShowRoomNameVCTL.h"
 #import "InkeStyleVCTL.h"
+#import "GCProgressBar.h"
+#import "GCUserDetailView.h"
 
-@import AFNetworking;
+//@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
-@interface ViewController ()
+@interface ViewController ()<NSURLSessionDownloadDelegate>
 
 @property (nonatomic, retain) UICopyLabel *myCopyEnableLabel;
 @property (nonatomic, retain) UIButton *bilibiliBtn;
+@property (nonatomic, retain) GCProgressBar* progressBar;
 
 @end
 
@@ -58,7 +61,11 @@
 	
 	[str appendString:@"ef"];
 	
+	_progressBar = [[GCProgressBar alloc] initWithSize:CGSizeMake(200, 20)];
 	
+	_progressBar.center = CGPointMake(150, 200);
+	
+	[self.view addSubview:_progressBar];
 }
 
 - (void)onTapBilibili:(UITapGestureRecognizer*)sender {
@@ -271,11 +278,54 @@
 	[self.navigationController pushViewController:vctl animated:YES];
 }
 
-- (void)test {
+- (IBAction)onModalView:(id)sender {
 	
-	AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
+	GCUserDetailView *view = (GCUserDetailView*)[self viewByClassName:@"GCUserDetailView" inNib:@"GCUserDetailView"];
 	
 	
+	
+	[view show];
+}
+
+- (IBAction)onURLSession:(id)sender {
+	
+	NSURLSessionConfiguration *cfg = [NSURLSessionConfiguration defaultSessionConfiguration];
+	
+	NSURLSession *session = [NSURLSession sessionWithConfiguration:cfg delegate:self delegateQueue:nil];
+	
+//	NSURL *url = [NSURL URLWithString:@"http://staticnova.ruoogle.com/video/1175936/20160203/476175122087221_game.mp4"];
+	NSURL *url = [NSURL URLWithString:@"http://ganliao.qiniudn.com/TestArchive.ipa"];
+	
+	NSURLSessionDownloadTask * task = [session downloadTaskWithURL:url];
+
+	[task resume];
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
+			didWriteData:(int64_t)bytesWritten
+ totalBytesWritten:(int64_t)totalBytesWritten
+totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
+	
+	dispatch_sync(dispatch_get_main_queue(), ^{
+		
+		CGFloat percent = totalBytesWritten * 1.0/totalBytesExpectedToWrite;
+		
+		[_progressBar setPercent:percent];
+	});
+}
+
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error {
+	
+	NSURLSessionConfiguration *configuration = session.configuration;
+	
+	NSLog(@"下载错误了,大侠");
+	
+	[task resume];
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
+	
+	NSLog(@"下载over");
 }
 
 @end

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */; };
+		CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F21C1C2964FE00E6874C /* AnimViewController.m */; };
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
 		CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F2211C29651800E6874C /* GCMessageDetailView.m */; };
@@ -29,6 +29,7 @@
 		CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8E46051C34F7EF001D79FA /* TestRunLoopVCTL.xib */; };
 		CE8E460A1C34FE38001D79FA /* RunLoopTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E46091C34FE38001D79FA /* RunLoopTask.m */; };
 		CE903E6D1C3B6D77008D8163 /* CollectiveViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE903E6C1C3B6D77008D8163 /* CollectiveViewTests.m */; };
+		CE9282A21C61F4030099427F /* GCProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9282A11C61F4030099427F /* GCProgressBar.m */; };
 		CE941C591C23D71900A24768 /* BlockBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C581C23D71900A24768 /* BlockBackground.m */; };
 		CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE941C5B1C23D92C00A24768 /* BlockAlertView.m */; };
 		CE963A911C1FF6D1009E5A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE963A901C1FF6D1009E5A33 /* main.m */; };
@@ -69,6 +70,8 @@
 		CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */; };
 		CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
+		CEEE90F01C6318F30009138E /* GCUserDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEE90EF1C6318F30009138E /* GCUserDetailView.xib */; };
+		CEEE90F31C6319AD0009138E /* GCUserDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEE90F21C6319AD0009138E /* GCUserDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,8 @@
 		CE903E6A1C3B6D77008D8163 /* CollectiveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE903E6C1C3B6D77008D8163 /* CollectiveViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewTests.m; sourceTree = "<group>"; };
 		CE903E6E1C3B6D77008D8163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9282A01C61F4030099427F /* GCProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCProgressBar.h; sourceTree = "<group>"; };
+		CE9282A11C61F4030099427F /* GCProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCProgressBar.m; sourceTree = "<group>"; };
 		CE941C571C23D71900A24768 /* BlockBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockBackground.h; sourceTree = "<group>"; };
 		CE941C581C23D71900A24768 /* BlockBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBackground.m; sourceTree = "<group>"; };
 		CE941C5A1C23D92C00A24768 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -194,6 +199,9 @@
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE90EF1C6318F30009138E /* GCUserDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCUserDetailView.xib; sourceTree = "<group>"; };
+		CEEE90F11C6319AD0009138E /* GCUserDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCUserDetailView.h; sourceTree = "<group>"; };
+		CEEE90F21C6319AD0009138E /* GCUserDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCUserDetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +243,9 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEEE90F11C6319AD0009138E /* GCUserDetailView.h */,
+				CEEE90F21C6319AD0009138E /* GCUserDetailView.m */,
+				CEEE90EF1C6318F30009138E /* GCUserDetailView.xib */,
 				CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */,
 				CEB0435C1C604BE80042078D /* InkeStyleVCTL.h */,
 				CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */,
@@ -244,6 +255,8 @@
 				CE898AD51C5637AD005868CC /* GCShowRoomNameVCTL.m */,
 				CE7EA1521C48F7A000064A6A /* PopUpTestVCTL.h */,
 				CE7EA1531C48F7A000064A6A /* PopUpTestVCTL.m */,
+				CE9282A01C61F4030099427F /* GCProgressBar.h */,
+				CE9282A11C61F4030099427F /* GCProgressBar.m */,
 				CE7EA1541C48F7A000064A6A /* PopUpTestVCTL.xib */,
 				CE7EA14D1C48F4D800064A6A /* PopUpCell.h */,
 				CE7EA14E1C48F4D800064A6A /* PopUpCell.m */,
@@ -493,6 +506,7 @@
 				CEA9C2911C50F7DD00740B9F /* lw_gift80.png in Resources */,
 				CE898AD81C5637CF005868CC /* GCShowRoomNameVCTL.xib in Resources */,
 				CE963AA71C1FF6EE009E5A33 /* GCGiftView.xib in Resources */,
+				CEEE90F01C6318F30009138E /* GCUserDetailView.xib in Resources */,
 				CEAC91CC1C44E06500D2CBDB /* GCBackGroundMusicVCTL.xib in Resources */,
 				CEA9C2901C50F7DD00740B9F /* lw_gift70.png in Resources */,
 				CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */,
@@ -548,6 +562,7 @@
 				CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
+				CEEE90F31C6319AD0009138E /* GCUserDetailView.m in Sources */,
 				CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
 				CE7EA14C1C48D4BB00064A6A /* PopUpBoxItem.m in Sources */,
@@ -567,6 +582,7 @@
 				CE898AD61C5637AD005868CC /* GCShowRoomNameVCTL.m in Sources */,
 				CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */,
 				CEB0435F1C604BE80042078D /* InkeStyleVCTL.m in Sources */,
+				CE9282A21C61F4030099427F /* GCProgressBar.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
