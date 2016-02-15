@@ -281,9 +281,7 @@
 - (IBAction)onModalView:(id)sender {
 	
 	GCUserDetailView *view = (GCUserDetailView*)[self viewByClassName:@"GCUserDetailView" inNib:@"GCUserDetailView"];
-	
-	
-	
+
 	[view show];
 }
 
@@ -293,6 +291,8 @@
 	
 	NSURLSession *session = [NSURLSession sessionWithConfiguration:cfg delegate:self delegateQueue:nil];
 	
+	NSURLCache *cache = session.configuration.URLCache;
+	
 //	NSURL *url = [NSURL URLWithString:@"http://staticnova.ruoogle.com/video/1175936/20160203/476175122087221_game.mp4"];
 	NSURL *url = [NSURL URLWithString:@"http://ganliao.qiniudn.com/TestArchive.ipa"];
 	
@@ -301,9 +301,7 @@
 	[task resume];
 }
 
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
-			didWriteData:(int64_t)bytesWritten
- totalBytesWritten:(int64_t)totalBytesWritten
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten
 totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
 	
 	dispatch_sync(dispatch_get_main_queue(), ^{
