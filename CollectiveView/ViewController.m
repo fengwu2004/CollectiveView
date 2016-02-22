@@ -24,6 +24,7 @@
 #import "GCProgressBar.h"
 #import "GCUserDetailView.h"
 #import "DragWindowVCTL.h"
+#import "BadWordFilter.h"
 
 //@import AFNetworking;
 
@@ -291,6 +292,11 @@
 	DragWindowVCTL *vctl = [[DragWindowVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)onBadWordsFilter:(id)sender {
+	
+	[[BadWordFilter sharedInstance] test];
 }
 
 - (IBAction)onURLSession:(id)sender {
