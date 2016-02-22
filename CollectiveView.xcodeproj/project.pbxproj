@@ -48,6 +48,8 @@
 		CEA3F7601C3F8702002841D0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F75F1C3F8702002841D0 /* JavaScriptCore.framework */; };
 		CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */; };
 		CEA3F7651C3F8767002841D0 /* OCCallJavaScript.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */; };
+		CEA42E4C1C7469B7004D05DD /* DragWindowVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA42E4A1C7469B7004D05DD /* DragWindowVCTL.m */; };
+		CEA42E4D1C7469B7004D05DD /* DragWindowVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA42E4B1C7469B7004D05DD /* DragWindowVCTL.xib */; };
 		CEA9C28B1C50F7DD00740B9F /* lw_gift20.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2831C50F7DD00740B9F /* lw_gift20.png */; };
 		CEA9C28C1C50F7DD00740B9F /* lw_gift30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2841C50F7DD00740B9F /* lw_gift30.png */; };
 		CEA9C28D1C50F7DD00740B9F /* lw_gift40.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA9C2851C50F7DD00740B9F /* lw_gift40.png */; };
@@ -163,6 +165,9 @@
 		CEA3F7611C3F8758002841D0 /* OCCallJavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJavaScript.h; sourceTree = "<group>"; };
 		CEA3F7621C3F8758002841D0 /* OCCallJavaScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJavaScript.m; sourceTree = "<group>"; };
 		CEA3F7641C3F8767002841D0 /* OCCallJavaScript.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallJavaScript.xib; sourceTree = "<group>"; };
+		CEA42E491C7469B7004D05DD /* DragWindowVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragWindowVCTL.h; sourceTree = "<group>"; };
+		CEA42E4A1C7469B7004D05DD /* DragWindowVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragWindowVCTL.m; sourceTree = "<group>"; };
+		CEA42E4B1C7469B7004D05DD /* DragWindowVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragWindowVCTL.xib; sourceTree = "<group>"; };
 		CEA9C2831C50F7DD00740B9F /* lw_gift20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift20.png; sourceTree = "<group>"; };
 		CEA9C2841C50F7DD00740B9F /* lw_gift30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift30.png; sourceTree = "<group>"; };
 		CEA9C2851C50F7DD00740B9F /* lw_gift40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lw_gift40.png; sourceTree = "<group>"; };
@@ -243,6 +248,9 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEA42E491C7469B7004D05DD /* DragWindowVCTL.h */,
+				CEA42E4A1C7469B7004D05DD /* DragWindowVCTL.m */,
+				CEA42E4B1C7469B7004D05DD /* DragWindowVCTL.xib */,
 				CEEE90F11C6319AD0009138E /* GCUserDetailView.h */,
 				CEEE90F21C6319AD0009138E /* GCUserDetailView.m */,
 				CEEE90EF1C6318F30009138E /* GCUserDetailView.xib */,
@@ -518,6 +526,7 @@
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
 				CE8E46071C34F7EF001D79FA /* TestRunLoopVCTL.xib in Resources */,
 				CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */,
+				CEA42E4D1C7469B7004D05DD /* DragWindowVCTL.xib in Resources */,
 				CE46F2241C29651800E6874C /* GCMessageDetailView.xib in Resources */,
 				CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */,
 				CEA9C28F1C50F7DD00740B9F /* lw_gift60 in Resources */,
@@ -565,6 +574,7 @@
 				CEEE90F31C6319AD0009138E /* GCUserDetailView.m in Sources */,
 				CEAC91D81C44E20C00D2CBDB /* NSString+TomAddition.m in Sources */,
 				CE963AAE1C1FFEBE009E5A33 /* GCGiftCollectCell.m in Sources */,
+				CEA42E4C1C7469B7004D05DD /* DragWindowVCTL.m in Sources */,
 				CE7EA14C1C48D4BB00064A6A /* PopUpBoxItem.m in Sources */,
 				CE7EA1491C48D2BB00064A6A /* PopUpBox.m in Sources */,
 				CEA3F7631C3F8758002841D0 /* OCCallJavaScript.m in Sources */,
@@ -742,7 +752,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai Ruguo Internet Science Technology Co.,Ltd. (6URA9L9CB5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -754,7 +765,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecba37cf-65f0-498d-b971-07ef0845ffcc";
+				PROVISIONING_PROFILE = "8a5ed57c-c3fd-451c-bd5d-2b54639ef892";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Debug;
@@ -776,7 +787,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecba37cf-65f0-498d-b971-07ef0845ffcc";
+				PROVISIONING_PROFILE = "8a5ed57c-c3fd-451c-bd5d-2b54639ef892";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Release;

@@ -23,6 +23,7 @@
 #import "InkeStyleVCTL.h"
 #import "GCProgressBar.h"
 #import "GCUserDetailView.h"
+#import "DragWindowVCTL.h"
 
 //@import AFNetworking;
 
@@ -283,6 +284,13 @@
 	GCUserDetailView *view = (GCUserDetailView*)[self viewByClassName:@"GCUserDetailView" inNib:@"GCUserDetailView"];
 
 	[view show];
+}
+
+- (IBAction)onDragView:(id)sender {
+	
+	DragWindowVCTL *vctl = [[DragWindowVCTL alloc] init];
+	
+	[self.navigationController pushViewController:vctl animated:YES];
 }
 
 - (IBAction)onURLSession:(id)sender {

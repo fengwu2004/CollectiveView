@@ -37,7 +37,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
                                 <state key="normal" title="送礼物"/>
                                 <connections>
-                                    <action selector="onURLSession:" destination="PeC-A0-1yf" eventType="touchUpInside" id="a3N-as-rVA"/>
+                                    <action selector="onDragView:" destination="PeC-A0-1yf" eventType="touchUpInside" id="C0L-mC-4ZC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是用来复制用的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-tq-eWz">
