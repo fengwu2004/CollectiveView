@@ -25,7 +25,9 @@
 #import "GCUserDetailView.h"
 #import "DragWindowVCTL.h"
 #import "BadWordFilter.h"
-
+#import "MyData.h"
+#import "TestBlock.h"
+#import "SwipDownCloseVCTL.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -296,7 +298,16 @@
 
 - (IBAction)onBadWordsFilter:(id)sender {
 	
-	[[BadWordFilter sharedInstance] test];
+	SwipDownCloseVCTL *vctl = [[SwipDownCloseVCTL alloc] init];
+	
+	[self presentViewController:vctl animated:YES completion:nil];
+}
+
+- (IBAction)onNext:(id)sender {
+	
+//	[[BadWordFilter sharedInstance] log];
+	
+	TestBlock *ob = [[TestBlock alloc] init];
 }
 
 - (IBAction)onURLSession:(id)sender {
@@ -304,8 +315,6 @@
 	NSURLSessionConfiguration *cfg = [NSURLSessionConfiguration defaultSessionConfiguration];
 	
 	NSURLSession *session = [NSURLSession sessionWithConfiguration:cfg delegate:self delegateQueue:nil];
-	
-	NSURLCache *cache = session.configuration.URLCache;
 	
 //	NSURL *url = [NSURL URLWithString:@"http://staticnova.ruoogle.com/video/1175936/20160203/476175122087221_game.mp4"];
 	NSURL *url = [NSURL URLWithString:@"http://ganliao.qiniudn.com/TestArchive.ipa"];

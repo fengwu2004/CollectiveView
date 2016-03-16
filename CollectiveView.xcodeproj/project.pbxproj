@@ -69,8 +69,12 @@
 		CEB0435F1C604BE80042078D /* InkeStyleVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0435D1C604BE80042078D /* InkeStyleVCTL.m */; };
 		CEB043601C604BE80042078D /* InkeStyleVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */; };
 		CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8C0611C3A89640010110E /* UICopyLabel.m */; };
+		CEBC7CB31C990E9300C0237D /* SwipDownCloseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBC7CB21C990E9300C0237D /* SwipDownCloseVCTL.m */; };
+		CEBC7CB51C9931B100C0237D /* SwipDownCloseVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBC7CB41C9931B100C0237D /* SwipDownCloseVCTL.xib */; };
 		CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */; };
 		CEC661E41C4DDBB700ED1515 /* GCIdentityInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */; };
+		CECA15ED1C8E6C840000A183 /* MyData.m in Sources */ = {isa = PBXBuildFile; fileRef = CECA15EC1C8E6C840000A183 /* MyData.m */; };
+		CECA8AB51C9813B900A47588 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CECA8AB41C9813B900A47588 /* TestBlock.m */; };
 		CEDA0AE01C2A9E0C00A25E20 /* CollectiveViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */; };
 		CEEBB65E1C7B0845007D16C7 /* BadWordFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB65D1C7B0845007D16C7 /* BadWordFilter.m */; };
 		CEEBB6611C7B08FA007D16C7 /* TrieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB6601C7B08FA007D16C7 /* TrieNode.m */; };
@@ -203,9 +207,16 @@
 		CEB0435E1C604BE80042078D /* InkeStyleVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InkeStyleVCTL.xib; sourceTree = "<group>"; };
 		CEB8C0601C3A89640010110E /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		CEB8C0611C3A89640010110E /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
+		CEBC7CB11C990E9300C0237D /* SwipDownCloseVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipDownCloseVCTL.h; sourceTree = "<group>"; };
+		CEBC7CB21C990E9300C0237D /* SwipDownCloseVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipDownCloseVCTL.m; sourceTree = "<group>"; };
+		CEBC7CB41C9931B100C0237D /* SwipDownCloseVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipDownCloseVCTL.xib; sourceTree = "<group>"; };
 		CEC661E01C4DDBB700ED1515 /* GCIdentityInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCIdentityInputView.h; sourceTree = "<group>"; };
 		CEC661E11C4DDBB700ED1515 /* GCIdentityInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCIdentityInputView.m; sourceTree = "<group>"; };
 		CEC661E21C4DDBB700ED1515 /* GCIdentityInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCIdentityInputView.xib; sourceTree = "<group>"; };
+		CECA15EB1C8E6C840000A183 /* MyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyData.h; sourceTree = "<group>"; };
+		CECA15EC1C8E6C840000A183 /* MyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyData.m; sourceTree = "<group>"; };
+		CECA8AB31C9813B900A47588 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		CECA8AB41C9813B900A47588 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		CEDA0ADD1C2A9E0B00A25E20 /* CollectiveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA0ADF1C2A9E0C00A25E20 /* CollectiveViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectiveViewUITests.m; sourceTree = "<group>"; };
 		CEDA0AE11C2A9E0C00A25E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +272,13 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				CEBC7CB41C9931B100C0237D /* SwipDownCloseVCTL.xib */,
+				CEBC7CB11C990E9300C0237D /* SwipDownCloseVCTL.h */,
+				CEBC7CB21C990E9300C0237D /* SwipDownCloseVCTL.m */,
+				CECA8AB31C9813B900A47588 /* TestBlock.h */,
+				CECA8AB41C9813B900A47588 /* TestBlock.m */,
+				CECA15EB1C8E6C840000A183 /* MyData.h */,
+				CECA15EC1C8E6C840000A183 /* MyData.m */,
 				CEEBB6671C7B12A7007D16C7 /* Property List.plist */,
 				CEEBB6691C7B185E007D16C7 /* BadWord.txt */,
 				CEEBB6621C7B0E2C007D16C7 /* TrieFilter.h */,
@@ -543,6 +561,7 @@
 				CEA9C28B1C50F7DD00740B9F /* lw_gift20.png in Resources */,
 				CEAC91E21C45016B00D2CBDB /* GCQinTingLogView.xib in Resources */,
 				CE971A581C4F9957002CA670 /* giftshop.html in Resources */,
+				CEBC7CB51C9931B100C0237D /* SwipDownCloseVCTL.xib in Resources */,
 				CEA9C28D1C50F7DD00740B9F /* lw_gift40.png in Resources */,
 				CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
@@ -592,6 +611,7 @@
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */,
 				CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */,
+				CECA15ED1C8E6C840000A183 /* MyData.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
 				CEEBB6641C7B0E2C007D16C7 /* TrieFilter.m in Sources */,
@@ -606,6 +626,8 @@
 				CEAC91E01C45016100D2CBDB /* GCQinTingLogView.m in Sources */,
 				CE46F2231C29651800E6874C /* GCMessageDetailView.m in Sources */,
 				CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */,
+				CEBC7CB31C990E9300C0237D /* SwipDownCloseVCTL.m in Sources */,
+				CECA8AB51C9813B900A47588 /* TestBlock.m in Sources */,
 				CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */,
 				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
 				CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */,

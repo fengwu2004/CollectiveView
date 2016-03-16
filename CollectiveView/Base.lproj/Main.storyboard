@@ -54,14 +54,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyp-zE-qlS">
+                                <rect key="frame" x="278" y="323" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onNext:" destination="PeC-A0-1yf" eventType="touchUpInside" id="kic-JN-9ud"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k4q-73-DBH" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" constant="-8.5" id="6OZ-rG-qtU"/>
+                            <constraint firstItem="Iyp-zE-qlS" firstAttribute="top" secondItem="fA1-n4-BYU" secondAttribute="bottom" constant="8" id="LOW-hK-zeq"/>
                             <constraint firstItem="JK5-tq-eWz" firstAttribute="top" secondItem="fA1-n4-BYU" secondAttribute="bottom" constant="55" id="arc-T7-vDi"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerY" secondItem="ahe-jc-sGP" secondAttribute="centerY" id="eQ5-J4-34U"/>
                             <constraint firstItem="k4q-73-DBH" firstAttribute="top" secondItem="JK5-tq-eWz" secondAttribute="bottom" constant="-208" id="jCL-80-abc"/>
                             <constraint firstItem="JK5-tq-eWz" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="pBT-Vw-wDZ"/>
+                            <constraint firstItem="Iyp-zE-qlS" firstAttribute="centerX" secondItem="fA1-n4-BYU" secondAttribute="centerX" id="t7Z-fH-25R"/>
                             <constraint firstItem="fA1-n4-BYU" firstAttribute="centerX" secondItem="ahe-jc-sGP" secondAttribute="centerX" id="w17-cg-x3G"/>
                         </constraints>
                     </view>

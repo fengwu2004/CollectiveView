@@ -8,6 +8,7 @@
 
 #import "BadWordFilter.h"
 #import "TrieFilter.h"
+#import "MyData.h"
 
 @implementation BadWordFilter
 
@@ -50,6 +51,16 @@
 		
 		NSLog(@"没有屏蔽字");
 	}
+}
+
+- (void)setMyData:(MyData *)myData {
+	
+	_myData = myData;
+}
+
+- (void)log {
+	
+	NSLog(@"abcd");
 }
 
 @end

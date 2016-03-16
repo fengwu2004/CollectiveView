@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class MyData;
+
 @interface BadWordFilter : NSObject
+
+@property (nonatomic, retain) MyData *myData;
 
 + (BadWordFilter*)sharedInstance;
 
 - (void)test;
+
+- (void)log;
 
 @end
