@@ -28,7 +28,7 @@
 
 - (void)test {
 	
-	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"BadWord" ofType:@"txt"];
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"txt"];
 	
 	NSString *str = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
 	

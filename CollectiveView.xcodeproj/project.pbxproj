@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE03898A1C9F87F700CD2680 /* TNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0389891C9F87F700CD2680 /* TNode.m */; };
+		CE0389901C9F8B1200CD2680 /* TNodeCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03898F1C9F8B1200CD2680 /* TNodeCreate.m */; };
+		CE0389921C9FA4B600CD2680 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE0389911C9FA4B600CD2680 /* data.txt */; };
+		CE0389951C9FA54300CD2680 /* BadWord.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0389941C9FA54300CD2680 /* BadWord.m */; };
 		CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46F21C1C2964FE00E6874C /* AnimViewController.m */; };
 		CE46F21F1C2964FE00E6874C /* AnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE46F21D1C2964FE00E6874C /* AnimViewController.xib */; };
@@ -103,6 +107,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0389881C9F87F700CD2680 /* TNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNode.h; sourceTree = "<group>"; };
+		CE0389891C9F87F700CD2680 /* TNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNode.m; sourceTree = "<group>"; };
+		CE03898E1C9F8B1200CD2680 /* TNodeCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNodeCreate.h; sourceTree = "<group>"; };
+		CE03898F1C9F8B1200CD2680 /* TNodeCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNodeCreate.m; sourceTree = "<group>"; };
+		CE0389911C9FA4B600CD2680 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		CE0389931C9FA54300CD2680 /* BadWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadWord.h; sourceTree = "<group>"; };
+		CE0389941C9FA54300CD2680 /* BadWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadWord.m; sourceTree = "<group>"; };
 		CE17C1571C43935100CAF3C5 /* Persion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
 		CE17C1581C43935100CAF3C5 /* Persion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
 		CE2520BD1C60BC5F000028A3 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
@@ -279,11 +290,18 @@
 				CECA8AB41C9813B900A47588 /* TestBlock.m */,
 				CECA15EB1C8E6C840000A183 /* MyData.h */,
 				CECA15EC1C8E6C840000A183 /* MyData.m */,
+				CE03898E1C9F8B1200CD2680 /* TNodeCreate.h */,
+				CE03898F1C9F8B1200CD2680 /* TNodeCreate.m */,
+				CE0389881C9F87F700CD2680 /* TNode.h */,
+				CE0389891C9F87F700CD2680 /* TNode.m */,
+				CE0389931C9FA54300CD2680 /* BadWord.h */,
+				CE0389941C9FA54300CD2680 /* BadWord.m */,
 				CEEBB6671C7B12A7007D16C7 /* Property List.plist */,
 				CEEBB6691C7B185E007D16C7 /* BadWord.txt */,
 				CEEBB6621C7B0E2C007D16C7 /* TrieFilter.h */,
 				CEEBB6631C7B0E2C007D16C7 /* TrieFilter.m */,
 				CEEBB65F1C7B08FA007D16C7 /* TrieNode.h */,
+				CE0389911C9FA4B600CD2680 /* data.txt */,
 				CEEBB6601C7B08FA007D16C7 /* TrieNode.m */,
 				CEEBB65C1C7B0845007D16C7 /* BadWordFilter.h */,
 				CEEBB65D1C7B0845007D16C7 /* BadWordFilter.m */,
@@ -573,6 +591,7 @@
 				CEA9C28F1C50F7DD00740B9F /* lw_gift60 in Resources */,
 				CEA9C28E1C50F7DD00740B9F /* lw_gift50 in Resources */,
 				CE8B03F71C476E0F00F6AD9F /* SearchVCTLViewController.xib in Resources */,
+				CE0389921C9FA4B600CD2680 /* data.txt in Resources */,
 				CEEBB66A1C7B185E007D16C7 /* BadWord.txt in Resources */,
 				CE7EA1511C48F4D800064A6A /* PopUpCell.xib in Resources */,
 				CE963A9A1C1FF6D1009E5A33 /* Main.storyboard in Resources */,
@@ -605,13 +624,16 @@
 				CE8E44671C50774100B69F04 /* GCGift.m in Sources */,
 				CEA08AE21C27DE8100342B1D /* TableController.m in Sources */,
 				CE963A971C1FF6D1009E5A33 /* ViewController.m in Sources */,
+				CE03898A1C9F87F700CD2680 /* TNode.m in Sources */,
 				CE7EA1501C48F4D800064A6A /* PopUpCell.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
 				CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */,
+				CE0389951C9FA54300CD2680 /* BadWord.m in Sources */,
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */,
 				CE8B03FA1C47924A00F6AD9F /* SearchTableViewController.m in Sources */,
 				CECA15ED1C8E6C840000A183 /* MyData.m in Sources */,
+				CE0389901C9F8B1200CD2680 /* TNodeCreate.m in Sources */,
 				CE46F21E1C2964FE00E6874C /* AnimViewController.m in Sources */,
 				CEAC91DB1C44E21300D2CBDB /* NSString+MD5Addition.m in Sources */,
 				CEEBB6641C7B0E2C007D16C7 /* TrieFilter.m in Sources */,

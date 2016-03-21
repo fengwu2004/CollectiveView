@@ -10,8 +10,10 @@
 
 @interface TNode : NSObject
 
-@property (nonatomic, assign) char key;
+@property (nonatomic, copy) NSString *key;
 @property (nonatomic, assign) NSInteger nIndex;
-@property (nonatomic, retain) NSArray *children;
+@property (nonatomic, retain) NSMutableArray<__kindof TNode*> *subNodes;
+
+- (void)addWord:(NSString*)word;
 
 @end

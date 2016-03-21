@@ -28,6 +28,7 @@
 #import "MyData.h"
 #import "TestBlock.h"
 #import "SwipDownCloseVCTL.h"
+#import "TNodeCreate.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -38,6 +39,7 @@
 @property (nonatomic, retain) UICopyLabel *myCopyEnableLabel;
 @property (nonatomic, retain) UIButton *bilibiliBtn;
 @property (nonatomic, retain) GCProgressBar* progressBar;
+@property (nonatomic, retain) TNodeTreeCreater * tree;
 
 @end
 
@@ -305,9 +307,7 @@
 
 - (IBAction)onNext:(id)sender {
 	
-//	[[BadWordFilter sharedInstance] log];
-	
-	TestBlock *ob = [[TestBlock alloc] init];
+	[[TNodeTreeCreater sharedInstance] start];
 }
 
 - (IBAction)onURLSession:(id)sender {
