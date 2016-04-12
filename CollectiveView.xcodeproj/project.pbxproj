@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C9848D91CBCEBB600FCE912 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9848D81CBCEBB600FCE912 /* JSONModel.framework */; };
+		2C9848DB1CBCEC8400FCE912 /* JSONModel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9848D81CBCEBB600FCE912 /* JSONModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C9848DD1CBCECAA00FCE912 /* 14557583851000004.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9848DC1CBCECAA00FCE912 /* 14557583851000004.json */; };
+		2C9848E01CBCECD100FCE912 /* TestJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9848DF1CBCECD100FCE912 /* TestJsonModel.m */; };
 		CE03898A1C9F87F700CD2680 /* TNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0389891C9F87F700CD2680 /* TNode.m */; };
 		CE0389901C9F8B1200CD2680 /* TNodeCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03898F1C9F8B1200CD2680 /* TNodeCreate.m */; };
 		CE0389921C9FA4B600CD2680 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE0389911C9FA4B600CD2680 /* data.txt */; };
@@ -106,7 +110,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2C9848DA1CBCEC7C00FCE912 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C9848DB1CBCEC8400FCE912 /* JSONModel.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2C9848D81CBCEBB600FCE912 /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSONModel.framework; sourceTree = "<group>"; };
+		2C9848DC1CBCECAA00FCE912 /* 14557583851000004.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14557583851000004.json; sourceTree = "<group>"; };
+		2C9848DE1CBCECD100FCE912 /* TestJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJsonModel.h; sourceTree = "<group>"; };
+		2C9848DF1CBCECD100FCE912 /* TestJsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJsonModel.m; sourceTree = "<group>"; };
 		CE0389881C9F87F700CD2680 /* TNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNode.h; sourceTree = "<group>"; };
 		CE0389891C9F87F700CD2680 /* TNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNode.m; sourceTree = "<group>"; };
 		CE03898E1C9F8B1200CD2680 /* TNodeCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNodeCreate.h; sourceTree = "<group>"; };
@@ -257,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9848D91CBCEBB600FCE912 /* JSONModel.framework in Frameworks */,
 				CE2520BE1C60BC5F000028A3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +305,10 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				2C9848DE1CBCECD100FCE912 /* TestJsonModel.h */,
+				2C9848DF1CBCECD100FCE912 /* TestJsonModel.m */,
+				2C9848DC1CBCECAA00FCE912 /* 14557583851000004.json */,
+				2C9848D81CBCEBB600FCE912 /* JSONModel.framework */,
 				CEBC7CB41C9931B100C0237D /* SwipDownCloseVCTL.xib */,
 				CEBC7CB11C990E9300C0237D /* SwipDownCloseVCTL.h */,
 				CEBC7CB21C990E9300C0237D /* SwipDownCloseVCTL.m */,
@@ -480,6 +506,7 @@
 				CE963A881C1FF6D1009E5A33 /* Sources */,
 				CE963A891C1FF6D1009E5A33 /* Frameworks */,
 				CE963A8A1C1FF6D1009E5A33 /* Resources */,
+				2C9848DA1CBCEC7C00FCE912 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -523,7 +550,6 @@
 					};
 					CE963A8B1C1FF6D1009E5A33 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 6URA9L9CB5;
 					};
 					CEDA0ADC1C2A9E0B00A25E20 = {
 						CreatedOnToolsVersion = 7.1;
@@ -567,6 +593,7 @@
 				CE963A9F1C1FF6D1009E5A33 /* LaunchScreen.storyboard in Resources */,
 				CEB043601C604BE80042078D /* InkeStyleVCTL.xib in Resources */,
 				CE963A9C1C1FF6D1009E5A33 /* Assets.xcassets in Resources */,
+				2C9848DD1CBCECAA00FCE912 /* 14557583851000004.json in Resources */,
 				CE963AAF1C1FFEBE009E5A33 /* GCGiftCollectCell.xib in Resources */,
 				CEA9C2911C50F7DD00740B9F /* lw_gift80.png in Resources */,
 				CE898AD81C5637CF005868CC /* GCShowRoomNameVCTL.xib in Resources */,
@@ -654,6 +681,7 @@
 				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
 				CEAC91D51C44E1F900D2CBDB /* NSDate+TomAddition.m in Sources */,
 				CE941C591C23D71900A24768 /* BlockBackground.m in Sources */,
+				2C9848E01CBCECD100FCE912 /* TestJsonModel.m in Sources */,
 				CE941C5C1C23D92C00A24768 /* BlockAlertView.m in Sources */,
 				CEEBB65E1C7B0845007D16C7 /* BadWordFilter.m in Sources */,
 				CE963AAA1C1FF716009E5A33 /* GCGiftView.m in Sources */,
@@ -822,8 +850,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jianfei Chen (K5H3MEFEEM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -835,7 +863,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8a5ed57c-c3fd-451c-bd5d-2b54639ef892";
+				PROVISIONING_PROFILE = "";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Debug;
@@ -857,7 +885,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruoogle.gamechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8a5ed57c-c3fd-451c-bd5d-2b54639ef892";
+				PROVISIONING_PROFILE = "";
 				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = YES;
 			};
 			name = Release;

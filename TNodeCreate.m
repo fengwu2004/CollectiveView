@@ -60,23 +60,23 @@
 	
 	NSArray *array = [str componentsSeparatedByString:@"\r\n"];
 	
-	for (NSInteger i = 0; i < array.count; ++i) {
-		
-		NSString *value = array[i];
-		
-		[[TrieFilter sharedInstance] AddKey:value];
-	}
-	
-	BOOL b = [[TrieFilter sharedInstance] HasBadWord:@"名字加fuck日本人妖"];
-	
-	if (b) {
-		
-		NSLog(@"有屏蔽字");
-	}
-	else {
-		
-		NSLog(@"没有屏蔽字");
-	}
+//	for (NSInteger i = 0; i < array.count; ++i) {
+//		
+//		NSString *value = array[i];
+//		
+//		[[TrieFilter sharedInstance] AddKey:value];
+//	}
+//	
+//	BOOL b = [[TrieFilter sharedInstance] HasBadWord:@"名字加fuck日本人妖"];
+//	
+//	if (b) {
+//		
+//		NSLog(@"有屏蔽字");
+//	}
+//	else {
+//		
+//		NSLog(@"没有屏蔽字");
+//	}
 }
 
 - (void)start {

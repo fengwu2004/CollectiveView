@@ -29,6 +29,7 @@
 #import "TestBlock.h"
 #import "SwipDownCloseVCTL.h"
 #import "TNodeCreate.h"
+#import "TestJsonModel.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -308,6 +309,17 @@
 - (IBAction)onNext:(id)sender {
 	
 	[[TNodeTreeCreater sharedInstance] start];
+}
+
+- (IBAction)testJsonModel:(id)sender {
+    
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"14557583851000004" ofType:@"json"];
+    
+    NSString* jsonContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    
+    TestJsonModel *objModel = [[TestJsonModel alloc] initWithString:jsonContents usingEncoding:NSUTF8StringEncoding error:nil];
+    
+    NSLog(@"%p", objModel);
 }
 
 - (IBAction)onURLSession:(id)sender {
