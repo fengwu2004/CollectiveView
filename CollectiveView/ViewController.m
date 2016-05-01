@@ -30,6 +30,9 @@
 #import "SwipDownCloseVCTL.h"
 #import "TNodeCreate.h"
 #import "TestJsonModel.h"
+#import "UMSocial.h"
+#import "AppDelegate.h"
+#import "TransViewController.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -304,6 +307,31 @@
 	SwipDownCloseVCTL *vctl = [[SwipDownCloseVCTL alloc] init];
 	
 	[self presentViewController:vctl animated:YES completion:nil];
+}
+
+- (IBAction)onTestUmengShare:(id)sender {
+    
+     NSArray * array = [NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToQQ,UMShareToWechatSession, nil];
+    
+    NSString *shareText = @"友盟社会化组件可以让移动应用快速具备社会化分享、登录、评论、喜欢等功能，并提供实时、全面的社会化数据统计分析服务。 http://www.umeng.com/social";             //分享内嵌文字
+    //    UIImage *shareImage = [UIImage imageNamed:@"UMS_social_demo"];          //分享内嵌图片
+//    UIImage *shareImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"UMS_social_demo" ofType:@"png"]];
+    //调用快速分享接口
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:UMeng_APPKEY
+                                      shareText:shareText
+                                     shareImage:nil
+                                shareToSnsNames:nil
+                                       delegate:nil];
+    
+    [NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToQQ,UMShareToQzone,UMShareToDouban,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite, nil];
+}
+
+- (IBAction)onTransformTest:(id)sender {
+    
+    TransViewController *vctl = [[TransViewController alloc] init];
+    
+    [self.navigationController pushViewController:vctl animated:YES];
 }
 
 - (IBAction)onNext:(id)sender {

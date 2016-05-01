@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BlockAlertView.h"
+#import "UMSocial.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
 	BlockAlertView *view = [[BlockAlertView alloc] initWithTitle:@"这是第一个界面" message:@"这是第一个，看看闪退不"];
 	
 	[view show];
+    
+    [UMSocialData setAppKey:UMeng_APPKEY];
 	
 	return YES;
 }

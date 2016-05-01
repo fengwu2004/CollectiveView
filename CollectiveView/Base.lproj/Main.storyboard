@@ -58,7 +58,7 @@
                                 <rect key="frame" x="278" y="323" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="testJsonModel:" destination="PeC-A0-1yf" eventType="touchUpInside" id="uC4-tP-o2o"/>
+                                    <action selector="onTransformTest:" destination="PeC-A0-1yf" eventType="touchUpInside" id="jnw-kL-5bX"/>
                                 </connections>
                             </button>
                         </subviews>
