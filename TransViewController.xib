@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransViewController">
+            <connections>
+                <outlet property="ibCoorLabel" destination="f74-UE-eSS" id="iRG-Kz-f88"/>
+                <outlet property="ibCoorTap" destination="aJr-Nc-zKg" id="DcW-KD-5hQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3G-Kw-ErT">
+                    <rect key="frame" x="510" y="100" width="30" height="30"/>
+                    <state key="normal" title="旋转"/>
+                    <connections>
+                        <action selector="rotate:" destination="-1" eventType="touchUpInside" id="Xqd-wU-dzs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqZ-ic-FGU">
+                    <rect key="frame" x="510" y="163" width="30" height="30"/>
+                    <state key="normal" title="平移"/>
+                    <connections>
+                        <action selector="tran:" destination="-1" eventType="touchUpInside" id="26L-Ob-ZAP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp1-I5-kPC">
+                    <rect key="frame" x="510" y="233" width="30" height="30"/>
+                    <state key="normal" title="缩放"/>
+                    <connections>
+                        <action selector="scale:" destination="-1" eventType="touchUpInside" id="I7i-NH-dNs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f74-UE-eSS">
+                    <rect key="frame" x="504" y="463" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-Nc-zKg">
+                    <rect key="frame" x="504" y="533" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf2-lg-04r">
+                    <rect key="frame" x="510" y="428" width="30" height="30"/>
+                    <state key="normal" title="整理"/>
+                    <connections>
+                        <action selector="ajust:" destination="-1" eventType="touchUpInside" id="p3s-a3-WSX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f74-UE-eSS" firstAttribute="top" secondItem="Fp1-I5-kPC" secondAttribute="bottom" constant="200" id="5Qw-rb-hX5"/>
+                <constraint firstItem="e3G-Kw-ErT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="5b7-8F-3mS"/>
+                <constraint firstAttribute="trailing" secondItem="aJr-Nc-zKg" secondAttribute="trailing" constant="54" id="5qj-RM-ru6"/>
+                <constraint firstItem="aJr-Nc-zKg" firstAttribute="top" secondItem="f74-UE-eSS" secondAttribute="bottom" constant="49" id="Gb3-nT-5bk"/>
+                <constraint firstAttribute="trailing" secondItem="f74-UE-eSS" secondAttribute="trailing" constant="54" id="NFC-QI-AH2"/>
+                <constraint firstAttribute="trailing" secondItem="jf2-lg-04r" secondAttribute="trailing" constant="52" id="NpB-SS-4xj"/>
+                <constraint firstAttribute="trailing" secondItem="Fp1-I5-kPC" secondAttribute="trailing" constant="60" id="Xif-IW-Y6H"/>
+                <constraint firstItem="Fp1-I5-kPC" firstAttribute="top" secondItem="GqZ-ic-FGU" secondAttribute="bottom" constant="40" id="hQd-os-Urt"/>
+                <constraint firstAttribute="trailing" secondItem="e3G-Kw-ErT" secondAttribute="trailing" constant="60" id="mKB-RI-sBu"/>
+                <constraint firstItem="jf2-lg-04r" firstAttribute="top" secondItem="aJr-Nc-zKg" secondAttribute="bottom" constant="39" id="pyW-ib-mCZ"/>
+                <constraint firstAttribute="trailing" secondItem="GqZ-ic-FGU" secondAttribute="trailing" constant="60" id="za2-Ec-K4s"/>
+                <constraint firstItem="GqZ-ic-FGU" firstAttribute="top" secondItem="e3G-Kw-ErT" secondAttribute="bottom" constant="33" id="zsm-KW-vbq"/>
+            </constraints>
+            <point key="canvasLocation" x="186" y="231"/>
+        </view>
+    </objects>
+</document>
