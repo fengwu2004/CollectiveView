@@ -33,6 +33,10 @@
 #import "UMSocial.h"
 #import "AppDelegate.h"
 #import "TransViewController.h"
+#import "SVGImageViewController.h"
+#import "SVGKitViewController.h"
+#import "YFLogManager.h"
+#import "DrawViewController.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -281,6 +285,20 @@
 	[self.navigationController pushViewController:vctl animated:YES];
 }
 
+- (IBAction)svgTest:(id)sender {
+    
+    SVGImageViewController *vctl = [[SVGImageViewController alloc] init];
+    
+    [self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)svgKtTest:(id)sender {
+    
+    SVGKitViewController *vctl = [[SVGKitViewController alloc] init];
+    
+    [self.navigationController pushViewController:vctl animated:YES];
+}
+
 - (IBAction)onInkeStyleVCTL:(id)sender {
 	
 	InkeStyleVCTL *vctl = [[InkeStyleVCTL alloc] init];
@@ -300,6 +318,25 @@
 	DragWindowVCTL *vctl = [[DragWindowVCTL alloc] init];
 	
 	[self.navigationController pushViewController:vctl animated:YES];
+}
+
+- (IBAction)testLog:(id)sender {
+    
+    [[YFLogManager sharedInstance] clear];
+    
+    for (int i = 0; i < 1005; ++i) {
+     
+        [[YFLogManager sharedInstance] log:[NSString stringWithFormat:@"%4d, %4d, %4d\n", i, i, i]];
+    }
+    
+    [[YFLogManager sharedInstance] flush];
+}
+
+- (IBAction)testDraw:(id)sender {
+    
+    DrawViewController *vctl = [[DrawViewController alloc] init];
+    
+    [self.navigationController pushViewController:vctl animated:YES];
 }
 
 - (IBAction)onBadWordsFilter:(id)sender {

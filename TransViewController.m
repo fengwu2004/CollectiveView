@@ -21,6 +21,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *ibCoorTap;
 @property (nonatomic, assign) CGPoint orig;
 @property (nonatomic, assign) CGPoint origCenter;
+@property (nonatomic, assign) CGPoint origTopLeft;
 
 @end
 
@@ -32,7 +33,7 @@
     
     [_testView setClipsToBounds:NO];
     
-    _testView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    _testView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 2, 2)];
     
@@ -73,6 +74,8 @@
     
     _origCenter = _testView.center;
     
+    _origTopLeft = _testView.frame.origin;
+    
     _orig = CGPointMake(0.5 * kScreenWidth, 0.5 * kScreenHeight);
     
     [_ibCoorTap setText:[NSString stringWithFormat:@"%d, %d", (int)self.view.bounds.size.width, (int)self.view.bounds.size.height]];
@@ -85,18 +88,69 @@
     [_ibCoorTap setText:[NSString stringWithFormat:@"%d, %d", (int)point.x, (int)point.y]];
 }
 
+CGPoint pointAddPoint(CGPoint a, CGPoint b) {
+    
+    return CGPointMake(a.x + b.x, a.y + b.y);
+}
+
+CGPoint pointMinusPoint(CGPoint a, CGPoint b) {
+    
+    return CGPointMake(a.x - b.x, a.y - b.y);
+}
+
+CGPoint operator+(const CGPoint& lhs, const CGPoint& rhs) {
+    
+    return pointAddPoint(lhs, rhs);
+}
+
+CGPoint operator-(const CGPoint& lhs, const CGPoint& rhs) {
+    
+    return pointMinusPoint(lhs, rhs);
+}
+
+CGPoint operator*(const CGPoint& lhs, CGFloat scale) {
+    
+    return CGPointMake(lhs.x * scale, lhs.y * scale);
+}
+
+CGPoint operator*(const CGPoint& lhs, const CGAffineTransform& tm) {
+    
+    return CGPointApplyAffineTransform(lhs, tm);
+}
+
+- (void)changeAnchorPoint:(CGPoint)p view:(UIView*)view {
+    
+    CGPoint center = view.center;
+    
+    CGPoint p0 = CGPointMake(view.layer.anchorPoint.x * view.bounds.size.width, view.layer.anchorPoint.y * view.bounds.size.height) ;
+    
+    CGPoint p1 = CGPointMake(p.x/view.bounds.size.width, p.y/view.bounds.size.height);
+    
+    center = center + p - p0;
+    
+    _testView.center = center;
+    
+    _testView.layer.anchorPoint = p1;
+}
+
 - (IBAction)tran:(id)sender {
     
-    _testView.transform = CGAffineTransformTranslate(_testView.transform, 30, 40);
-    
-//    [self displayCoord];
+    _testView.center = _testView.center + CGPointMake(30, 40);
 }
 
 - (IBAction)rotate:(id)sender {
     
-    CGAffineTransform transform = CGAffineTransformRotate(_testView.transform, 0.25 * PI);
-    
-    _testView.transform = transform;
+    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        
+        _testView.transform = CGAffineTransformRotate(_testView.transform, 0.25 * PI);
+        
+    } completion:^(BOOL finished) {
+        
+        if (finished) {
+            
+            
+        }
+    }];
     
 //    [self displayCoord];
 }
@@ -113,16 +167,6 @@
 - (IBAction)ajust:(id)sender {
     
     [self displayCoord];
-}
-
-CGPoint pointAddPoint(CGPoint a, CGPoint b) {
-    
-    return CGPointMake(a.x + b.x, a.y + b.y);
-}
-
-CGPoint pointMinusPoint(CGPoint a, CGPoint b) {
-    
-    return CGPointMake(a.x - b.x, a.y - b.y);
 }
 
 CGAffineTransform matrixMultiplyMatrix(CGAffineTransform a, CGAffineTransform b) {
@@ -154,15 +198,17 @@ CGAffineTransform matrixMultiplyMatrix(CGAffineTransform a, CGAffineTransform b)
     
     point = pointAddPoint(point, _origCenter);
     
+    point = pointAddPoint(point, _origTopLeft);
+    
     NSLog(@"%d, %d", (int)point.x, (int)point.y);
     
     CGPoint offset = pointMinusPoint(_orig, point);
     
     _testView.transform = CGAffineTransformMake(_testView.transform.a, _testView.transform.b, _testView.transform.c, _testView.transform.d, _testView.transform.tx + offset.x, _testView.transform.ty + offset.y);
     
-    CGAffineTransform rotate = CGAffineTransformInvert(_pointView.transform);
-    
-    _testView.transform = matrixMultiplyMatrix(rotate, _testView.transform);
+//    CGAffineTransform rotate = CGAffineTransformInvert(_pointView.transform);
+//    
+//    _testView.transform = matrixMultiplyMatrix(rotate, _testView.transform);
     
 //    CGAffineTransform xxx = CGAffineTransformTranslate(CGAffineTransformIdentity, offset.x, offset.y);
 //    

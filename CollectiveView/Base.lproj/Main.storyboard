@@ -33,11 +33,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="sendgift" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA1-n4-BYU">
-                                <rect key="frame" x="278" y="285" width="45" height="30"/>
+                                <rect key="frame" x="276" y="285" width="49" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="sendgift"/>
-                                <state key="normal" title="送礼物"/>
+                                <state key="normal" title="jamsvg"/>
                                 <connections>
-                                    <action selector="onBadWordsFilter:" destination="PeC-A0-1yf" eventType="touchUpInside" id="vQv-vk-jNv"/>
+                                    <action selector="onGiftBtnClick:" destination="PeC-A0-1yf" eventType="touchUpInside" id="wAf-p8-Rch"/>
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是用来复制用的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-tq-eWz">
@@ -55,10 +55,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyp-zE-qlS">
-                                <rect key="frame" x="278" y="323" width="46" height="30"/>
+                                <rect key="frame" x="277" y="323" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="onTransformTest:" destination="PeC-A0-1yf" eventType="touchUpInside" id="jnw-kL-5bX"/>
+                                    <action selector="testDraw:" destination="PeC-A0-1yf" eventType="touchUpInside" id="MXk-Yo-FEX"/>
                                 </connections>
                             </button>
                         </subviews>
