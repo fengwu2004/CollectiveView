@@ -27,6 +27,8 @@
 		2C0986911CE99C31006439AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0986901CE99C31006439AF /* CoreGraphics.framework */; };
 		2C0986931CE99D1F006439AF /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0986921CE99D1F006439AF /* CocoaLumberjack.framework */; };
 		2C0986941CE99D25006439AF /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C0986921CE99D1F006439AF /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C6698F21D5EFD9700C48E99 /* IDRTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6698F11D5EFD9700C48E99 /* IDRTimestamp.m */; };
+		2C6698F51D5F011600C48E99 /* JsonTestVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6698F41D5F011600C48E99 /* JsonTestVCTL.m */; };
 		2C71C66A1CD331880073ABCA /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C71C6271CD331880073ABCA /* UMSocialLocalizable.strings */; };
 		2C71C66B1CD331880073ABCA /* libUMSocial_Sdk_5.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C71C6351CD331880073ABCA /* libUMSocial_Sdk_5.1.a */; };
 		2C71C66C1CD331880073ABCA /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C71C6371CD331880073ABCA /* UMSCommentDetailController.xib */; };
@@ -49,6 +51,10 @@
 		2C71C68A1CD3322E0073ABCA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C71C6891CD3322E0073ABCA /* SystemConfiguration.framework */; };
 		2C71C6A51CD3A9700073ABCA /* TransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71C6A31CD3A9700073ABCA /* TransViewController.m */; };
 		2C71C6A61CD3A9710073ABCA /* TransViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C71C6A41CD3A9700073ABCA /* TransViewController.xib */; };
+		2C774BBB1CFBD68E00373C38 /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C774BB81CFBD68E00373C38 /* YLGIFImage.m */; };
+		2C774BBC1CFBD68E00373C38 /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C774BBA1CFBD68E00373C38 /* YLImageView.m */; };
+		2C774BBF1CFBD6B700373C38 /* TestGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C774BBE1CFBD6B700373C38 /* TestGifViewController.m */; };
+		2C774BC11CFBD91A00373C38 /* anchorPoint.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C774BC01CFBD91A00373C38 /* anchorPoint.gif */; };
 		2C9848D91CBCEBB600FCE912 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9848D81CBCEBB600FCE912 /* JSONModel.framework */; };
 		2C9848DB1CBCEC8400FCE912 /* JSONModel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9848D81CBCEBB600FCE912 /* JSONModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C9848DD1CBCECAA00FCE912 /* 14557583851000004.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9848DC1CBCECAA00FCE912 /* 14557583851000004.json */; };
@@ -203,6 +209,10 @@
 		2C09868E1CE99C1B006439AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2C0986901CE99C31006439AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2C0986921CE99D1F006439AF /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		2C6698F01D5EFD9700C48E99 /* IDRTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDRTimestamp.h; sourceTree = "<group>"; };
+		2C6698F11D5EFD9700C48E99 /* IDRTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDRTimestamp.m; sourceTree = "<group>"; };
+		2C6698F31D5F011600C48E99 /* JsonTestVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonTestVCTL.h; sourceTree = "<group>"; };
+		2C6698F41D5F011600C48E99 /* JsonTestVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonTestVCTL.m; sourceTree = "<group>"; };
 		2C71C6281CD331880073ABCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		2C71C62A1CD331880073ABCA /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		2C71C62B1CD331880073ABCA /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -254,6 +264,13 @@
 		2C71C6A21CD3A9700073ABCA /* TransViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransViewController.h; sourceTree = "<group>"; };
 		2C71C6A31CD3A9700073ABCA /* TransViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TransViewController.m; sourceTree = "<group>"; };
 		2C71C6A41CD3A9700073ABCA /* TransViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransViewController.xib; sourceTree = "<group>"; };
+		2C774BB71CFBD68E00373C38 /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
+		2C774BB81CFBD68E00373C38 /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
+		2C774BB91CFBD68E00373C38 /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
+		2C774BBA1CFBD68E00373C38 /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		2C774BBD1CFBD6B700373C38 /* TestGifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGifViewController.h; sourceTree = "<group>"; };
+		2C774BBE1CFBD6B700373C38 /* TestGifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGifViewController.m; sourceTree = "<group>"; };
+		2C774BC01CFBD91A00373C38 /* anchorPoint.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anchorPoint.gif; sourceTree = "<group>"; };
 		2C9848D81CBCEBB600FCE912 /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSONModel.framework; sourceTree = "<group>"; };
 		2C9848DC1CBCECAA00FCE912 /* 14557583851000004.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14557583851000004.json; sourceTree = "<group>"; };
 		2C9848DE1CBCECD100FCE912 /* TestJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJsonModel.h; sourceTree = "<group>"; };
@@ -601,6 +618,17 @@
 			path = Wechat;
 			sourceTree = "<group>";
 		};
+		2C774BB61CFBD68E00373C38 /* YLGIFImage */ = {
+			isa = PBXGroup;
+			children = (
+				2C774BB71CFBD68E00373C38 /* YLGIFImage.h */,
+				2C774BB81CFBD68E00373C38 /* YLGIFImage.m */,
+				2C774BB91CFBD68E00373C38 /* YLImageView.h */,
+				2C774BBA1CFBD68E00373C38 /* YLImageView.m */,
+			);
+			path = YLGIFImage;
+			sourceTree = "<group>";
+		};
 		CE903E6B1C3B6D77008D8163 /* CollectiveViewTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +641,11 @@
 		CE963A831C1FF6D1009E5A33 = {
 			isa = PBXGroup;
 			children = (
+				2C6698F31D5F011600C48E99 /* JsonTestVCTL.h */,
+				2C6698F41D5F011600C48E99 /* JsonTestVCTL.m */,
+				2C774BBD1CFBD6B700373C38 /* TestGifViewController.h */,
+				2C774BBE1CFBD6B700373C38 /* TestGifViewController.m */,
+				2C774BB61CFBD68E00373C38 /* YLGIFImage */,
 				2CBD883D1CF44E4D002ABA6A /* DrawViewController.h */,
 				2CBD883E1CF44E4D002ABA6A /* DrawViewController.m */,
 				2CBD883F1CF44E4D002ABA6A /* DrawViewController.xib */,
@@ -620,6 +653,8 @@
 				2CBD883B1CF44C87002ABA6A /* YFDrawView.m */,
 				2CBD88371CF449E8002ABA6A /* KYCollectView.h */,
 				2CBD88381CF449E8002ABA6A /* KYCollectView.m */,
+				2C6698F01D5EFD9700C48E99 /* IDRTimestamp.h */,
+				2C6698F11D5EFD9700C48E99 /* IDRTimestamp.m */,
 				2C0986921CE99D1F006439AF /* CocoaLumberjack.framework */,
 				2C0986901CE99C31006439AF /* CoreGraphics.framework */,
 				2C09868E1CE99C1B006439AF /* QuartzCore.framework */,
@@ -691,6 +726,7 @@
 				CE7EA14A1C48D4BB00064A6A /* PopUpBoxItem.h */,
 				CE7EA14B1C48D4BB00064A6A /* PopUpBoxItem.m */,
 				CE7EA1471C48D2BB00064A6A /* PopUpBox.h */,
+				2C774BC01CFBD91A00373C38 /* anchorPoint.gif */,
 				CE7EA1481C48D2BB00064A6A /* PopUpBox.m */,
 				CE8B03FB1C4794B400F6AD9F /* SearchTableViewController.xib */,
 				CE8B03F81C47924A00F6AD9F /* SearchTableViewController.h */,
@@ -955,6 +991,7 @@
 				CEBC7CB51C9931B100C0237D /* SwipDownCloseVCTL.xib in Resources */,
 				2C71C66C1CD331880073ABCA /* UMSCommentDetailController.xib in Resources */,
 				2C0986561CE96BE2006439AF /* svg.svg in Resources */,
+				2C774BC11CFBD91A00373C38 /* anchorPoint.gif in Resources */,
 				CEA9C28D1C50F7DD00740B9F /* lw_gift40.png in Resources */,
 				CE8B03FC1C4794B400F6AD9F /* SearchTableViewController.xib in Resources */,
 				CEA08AE31C27DE8100342B1D /* TableController.xib in Resources */,
@@ -1012,6 +1049,7 @@
 				2C0986531CE967EE006439AF /* SVGImageViewController.m in Sources */,
 				CE963A941C1FF6D1009E5A33 /* AppDelegate.m in Sources */,
 				CEAC91CE1C44E1A600D2CBDB /* GCSectionHeaderView.m in Sources */,
+				2C774BBF1CFBD6B700373C38 /* TestGifViewController.m in Sources */,
 				CE0389951C9FA54300CD2680 /* BadWord.m in Sources */,
 				CEB8C0621C3A89640010110E /* UICopyLabel.m in Sources */,
 				CE7EA1551C48F7A000064A6A /* PopUpTestVCTL.m in Sources */,
@@ -1042,7 +1080,10 @@
 				2CBD88401CF44E4D002ABA6A /* DrawViewController.m in Sources */,
 				CE8B03F61C476E0F00F6AD9F /* SearchVCTLViewController.m in Sources */,
 				CEBC7CB31C990E9300C0237D /* SwipDownCloseVCTL.m in Sources */,
+				2C6698F51D5F011600C48E99 /* JsonTestVCTL.m in Sources */,
 				CECA8AB51C9813B900A47588 /* TestBlock.m in Sources */,
+				2C774BBB1CFBD68E00373C38 /* YLGIFImage.m in Sources */,
+				2C774BBC1CFBD68E00373C38 /* YLImageView.m in Sources */,
 				2C71C6A51CD3A9700073ABCA /* TransViewController.m in Sources */,
 				CEC661E31C4DDBB700ED1515 /* GCIdentityInputView.m in Sources */,
 				CEAC91CB1C44E06500D2CBDB /* GCBackGroundMusicVCTL.m in Sources */,
@@ -1060,6 +1101,7 @@
 				CEAC91D21C44E1E400D2CBDB /* Utilities.m in Sources */,
 				CEB0435F1C604BE80042078D /* InkeStyleVCTL.m in Sources */,
 				2C0986711CE9796B006439AF /* JAMStyledBezierPath.m in Sources */,
+				2C6698F21D5EFD9700C48E99 /* IDRTimestamp.m in Sources */,
 				CE9282A21C61F4030099427F /* GCProgressBar.m in Sources */,
 				CE963A911C1FF6D1009E5A33 /* main.m in Sources */,
 				CEEBB6611C7B08FA007D16C7 /* TrieNode.m in Sources */,

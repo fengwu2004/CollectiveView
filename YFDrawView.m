@@ -130,7 +130,7 @@ static const int height = 16;
         
         int y = (i - 1) * (yOffset + height);
         
-        [self drawRhombusPath:i orig:CGPointMake(10 + x + 0.5 * , 300 + y)];
+        [self drawRhombusPath:i orig:CGPointMake(10 + x, 300 + y)];
     }
 }
 
@@ -209,23 +209,27 @@ static const int height = 16;
     
     int count = _number * 2 - 2 * number + 1;
     
-    int value = count / 2;
+    int halfCount = count / 2;
     
-    float dx = 5 + (xOffset + width) * 1.0/(yOffset + height);
+    float centerX = orig.x + halfCount * (xOffset + width) + 0.5 * width;
     
-    float dy = 5 ;
+    float centerY = orig.y + halfCount * (yOffset + height) + 0.5 * height;
     
-    float x = value * (xOffset + width) + 0.5 * width;
+    float g = (xOffset + width + 0.5 * width) * 1.0/(yOffset + height + 0.5 * height);
     
-    float y = value * (yOffset + height) + 0.5 * height;
+    float y = halfCount * (yOffset + height) + 0.5 * height;
     
-    CGPoint A = CGPointMake(orig.x + x, orig.y - dy);
+    y *= 1.1;
     
-    CGPoint B = CGPointMake(A.x + x + dx, orig.y + y);
+    float x = g * y;
     
-    CGPoint C = CGPointMake(A.x, B.y + y + dy);
+    CGPoint A = CGPointMake(centerX, centerY - y);
     
-    CGPoint D = CGPointMake(orig.x - dx, B.y);
+    CGPoint B = CGPointMake(centerX + x, centerY);
+    
+    CGPoint C = CGPointMake(centerX, centerY + y);
+    
+    CGPoint D = CGPointMake(centerX - x, centerY);
     
     [self drawPath:A B:B C:C D:D];
 }

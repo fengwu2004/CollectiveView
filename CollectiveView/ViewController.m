@@ -37,6 +37,7 @@
 #import "SVGKitViewController.h"
 #import "YFLogManager.h"
 #import "DrawViewController.h"
+#import "JsonTestVCTL.h"
 //@import AFNetworking;
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -334,7 +335,7 @@
 
 - (IBAction)testDraw:(id)sender {
     
-    DrawViewController *vctl = [[DrawViewController alloc] init];
+    JsonTestVCTL *vctl = [[JsonTestVCTL alloc] init];
     
     [self.navigationController pushViewController:vctl animated:YES];
 }
